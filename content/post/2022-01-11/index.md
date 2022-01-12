@@ -5,7 +5,7 @@ description: "Mixing VRealize Operations License" # Description used for search 
 featured: false # Sets if post is a featured post, making appear on the home page side bar.
 toc: false # Controls if a table of contents should be generated for first-level links automatically.
 # menu: main
-usePageBundles: false # Set to true to group assets like images in the same folder as this post.
+usePageBundles: true
 featureImage: "vrealize_Operations.png" # Sets featured image on blog post.
 # featureImageAlt: 'just me' # Alternative text for featured image.
 # featureImageCap: 'This is the featured image.' # Caption (optional).
