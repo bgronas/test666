@@ -9,23 +9,3 @@
   name = "About"
   url = "about/"
   weight = -107
-
-# social menu links
-
-[[social]]
-  name = "github"
-  type = "social"
-  weight = 1
-  url = "https://github.com/bgronas"
-  name = "linkedin"
-  weight = 2
-  url = "https://www.linkedin.com/in/bgronas"
-# other supported social links
-  name = "youtube"
-  url = "https://www.youtube.com/bgronas"
-  name = "facebook"
-  url = "https://facebook.com/bgronas"
-  name = "instagram"
-  url = "https://instagram.com/bgronas"
-  name = "gitlab"
-  url = "https://gitlab.com/bgronas"
