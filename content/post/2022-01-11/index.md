@@ -6,11 +6,11 @@ featured: false # Sets if post is a featured post, making appear on the home pag
 toc: false # Controls if a table of contents should be generated for first-level links automatically.
 # menu: main
 usePageBundles: false # Set to true to group assets like images in the same folder as this post.
-featureImage: "/images/vrealize_Operations.png" # Sets featured image on blog post.
+featureImage: "vrealize_Operations.png" # Sets featured image on blog post.
 # featureImageAlt: 'just me' # Alternative text for featured image.
 # featureImageCap: 'This is the featured image.' # Caption (optional).
-thumbnail: "/images/vrealize_Operations.png" # Sets thumbnail image appearing inside card on homepage.
-shareImage: "/images/icon.png" # Designate a separate image for social media sharing.
+thumbnail: "vrealize_Operations.png" # Sets thumbnail image appearing inside card on homepage.
+shareImage: "icon.png" # Designate a separate image for social media sharing.
 codeMaxLines: 10 # Override global value for how many lines within a code block before auto-collapsing.
 codeLineNumbers: false # Override global value for showing of line numbers within code block.
 figurePositionShow: true # Override global value for showing the figure label.
@@ -20,6 +20,7 @@ tags:
 comment: false # Disable comment if false.
 ---
 **Mixing vRealize Operations Licenses isn't easy. Let's try to define what's possible**
+
 # Mixing vRealize Suite / vRealize Operations Licenses.
 
   * The vRealize Suite STD will give you vROps ADV
