@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>vRealize on Clarity</title>
+    <title>vRealize on Bengt&#39;s Blog</title>
     <link>/tags/vrealize/</link>
-    <description>Recent content in vRealize on Clarity</description>
+    <description>Recent content in vRealize on Bengt&#39;s Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <copyright>Copyright © 2008–2018, Steve Francia and the Hugo Authors; all rights reserved.</copyright>
+    <copyright>cpy</copyright>
     <lastBuildDate>Wed, 12 Jan 2022 01:29:03 +0100</lastBuildDate><atom:link href="/tags/vrealize/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Mixing VRealize Operations Licenses</title>
