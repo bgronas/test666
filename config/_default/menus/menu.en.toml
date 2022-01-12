@@ -17,19 +17,15 @@
   type = "social"
   weight = 1
   url = "https://github.com/bgronas"
-  name = "twitter"
-  weight = 2
-  url = "https://twitter.com/bgronas"
   name = "linkedin"
-  weight = 3
+  weight = 2
   url = "https://www.linkedin.com/in/bgronas"
-
 # other supported social links
-name = "youtube"
-url = "https://www.youtube.com/bgronas"
-name = "facebook"
-url = "https://facebook.com/bgronas"
-name = "instagram"
-url = "https://instagram.com/bgronas"
-name = "gitlab"
-url = "https://gitlab.com/bgronas"
+  name = "youtube"
+  url = "https://www.youtube.com/bgronas"
+  name = "facebook"
+  url = "https://facebook.com/bgronas"
+  name = "instagram"
+  url = "https://instagram.com/bgronas"
+  name = "gitlab"
+  url = "https://gitlab.com/bgronas"
