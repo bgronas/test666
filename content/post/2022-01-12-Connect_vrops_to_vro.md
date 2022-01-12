@@ -79,11 +79,13 @@ The last check is to see if vRealize Operations has discovered all the Workflows
 
 <img src="/image-20220112220335041.png" alt="image-20220112220335041" style="zoom:25%;" />
 
-6. To prepare a Workflow to occur as an available action in vROPs.  From the list of objects, choose **vRO Reboot VM**, and select **Create / Modify ...** from the Actions menu
+6. Let's do the Policy work. Go to **Administration** > **Policies**, edit our active and default policy.  Select **Alerts and Symptoms** , find the Alert Definition associated with the Symptom/Recommendation/Action you want to automate, or just select all, click the ACTIONS drop down, **Automate** > **Enable**.  
+   <img src="images/image-20220112224402563.png" alt="image-20220112224402563" style="zoom:25%;" />
+7. To prepare a Workflow to occur as an available action in vROPs.  From the list of objects, choose **vRO Reboot VM**, and select **Create / Modify ...** from the Actions menu
    <img src="/image-20220112221127108.png" alt="image-20220112221127108" style="zoom:25%;" />
-7. For Resource Type and Target Resource Type, Select **Virtual Machine**, for Operation Select Add, then click **Begin Action** and OK
+8. For Resource Type and Target Resource Type, Select **Virtual Machine**, for Operation Select Add, then click **Begin Action** and OK
    <img src="/image-20220112222224962.png" alt="image-20220112222224962" style="zoom:25%;" />
-8. 
+9. 
 
 
 
