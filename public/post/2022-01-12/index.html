@@ -2,7 +2,7 @@
 <!DOCTYPE html>
 <html lang="en" data-figures="true" class="page" data-mode="lit">
   <head>
-<title>Mixing VRealize Operations Licenses | Bengt&#39;s Blog</title>
+<title>Connect vROps to vRO | Bengt&#39;s Blog</title>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -10,20 +10,20 @@
 <meta property="og:locale" content="en" />
 
 <meta property="og:type" content="article">
-<meta name="description" content="Mixing VRealize Operations License">
+<meta name="description" content="Connect vRealize Operations to vRealize Orchestrator">
 <meta name="twitter:card" content="summary_large_image" />
 <meta name="twitter:creator" content="bgronas">
-<meta name="twitter:title" content="Mixing VRealize Operations Licenses" />
-<meta property="og:url" content="/post/mixing-vrealize-suite-vrealize-operations-licenses/" />
-<meta property="og:title" content="Mixing VRealize Operations Licenses" />
-<meta property="og:description" content="Mixing VRealize Operations License" />
-<meta property="og:image" content="/post/mixing-vrealize-suite-vrealize-operations-licenses/images/icon.png" />
+<meta name="twitter:title" content="Connect vROps to vRO" />
+<meta property="og:url" content="/post/2022-01-12/" />
+<meta property="og:title" content="Connect vROps to vRO" />
+<meta property="og:description" content="Connect vRealize Operations to vRealize Orchestrator" />
+<meta property="og:image" content="/post/2022-01-12/share.png" />
 
 <link rel="apple-touch-icon" sizes="180x180" href="/icons/apple-touch-icon.png">
 <link rel="icon" type="image/png" sizes="32x32" href="/icons/favicon-32x32.png">
 <link rel="manifest" href="/icons/site.webmanifest">
 
-<link rel="canonical" href="/post/mixing-vrealize-suite-vrealize-operations-licenses/">
+<link rel="canonical" href="/post/2022-01-12/">
 
     
 
@@ -84,15 +84,15 @@
   
 <div class="grid-inverse wrap content">
   <article class="post_content">
-    <h1 class="post_title">Mixing VRealize Operations Licenses</h1>
+    <h1 class="post_title">Connect vROps to vRO</h1>
   <div class="post_meta">
     <span><svg class="icon">
   <use xlink:href="#calendar"></use>
 </svg></span>
     <span class="post_date">
-      Wed, 12 Jan 2022 01:29:03 CET</span>
-    <span class="post_time"> · 2 min read</span><span>&nbsp;· <a href='/tags/vrealize' title="vRealize" class="post_tag button button_translucent">vRealize
-        </a><a href='/tags/vrops' title="vROps" class="post_tag button button_translucent">vROps
+      Wed, 12 Jan 2022 19:20:12 CET</span>
+    <span class="post_time"> · 3 min read</span><span>&nbsp;· <a href='/tags/vrealize' title="vRealize" class="post_tag button button_translucent">vRealize
+        </a><a href='/tags/orchestrator' title="Orchestrator" class="post_tag button button_translucent">Orchestrator
         </a>
     </span>
   </div>
@@ -108,83 +108,77 @@
   
 
   
+    <div class="notices warning image-warning">
+  <div class="label">Image not found</div>
+    <style>
+      a.warning-link {
+        color: inherit !important;
+        font-weight: inherit !important;
+        text-decoration: underline !important;
+        border-bottom: none !important; }
+    </style>
+    <p>Web path: <a href='/post/2022-01-12/logo.jpg' title='Open this web path in a new tab' target='_blank' class='warning-link'>/post/2022-01-12/logo.jpg</a></p>
+    <p>Disk path: /content/post\2022-01-12\logo.jpg</p>
+    <p>Using <a href='https://gohugo.io/content-management/page-bundles/' title='Information about Hugo Page Bundles' target='_blank' class='warning-link'>Page Bundles</a>: true</p>
+</div>
 
-    <div class="post_featured">
-      <figure>
-        <picture>
-
-          
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-          
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-          
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-          
-
-          <img class="image_featured image_internal" src="/images/vrealize_Operations.png" alt="Mixing VRealize Operations Licenses" width="41" height="40" />
-          
-
-        </picture>
-      </figure>
-
-    </div>
   
 
 
     
-    <div class="post_body"><p><strong>Mixing vRealize Operations Licenses isn't easy. Let's try to define what's possible</strong></p>
-<h1 id="mixing-vrealize-suite--vrealize-operations-licenses">Mixing vRealize Suite / vRealize Operations Licenses.</h1>
-<ul>
-<li>The vRealize Suite STD will give you vROps ADV</li>
-<li>With both suites (adv/std) you will end up with vROps Adv.</li>
-<li>You can mix vROps ADV and vROps ENT editions/licenses.</li>
-<li>You can't mix vROps STD with vROps ADV or vROps Ent.</li>
-<li>vRealize Suite Per-CPU and per OSI can be mixed</li>
-<li>vRealize Operations ADV + vRealize Suite STD - This allowed but ONLY as separate license groups. <em>It doesn't work when you mix the keys in one group</em></li>
-<li>vRealize Suite ADV + vRealize Suite STD - will work too, 	as both with both suites you will end up with vROps Adv. <em>Separate license types into License Groups</em></li>
-</ul>
-<p>Don't forget you have vRA in vRealize Suite ADV too, and mixing editions at vRA might not be permitted</p>
-<p>Do you have questions about License groups – head over to my colleague *Brock Peterson *<a href="https://www.brockpeterson.com/post/vrops-license-groups">https://www.brockpeterson.com/post/vrops-license-groups</a></p>
-<h1 id="tip">Tip:</h1>
-<p>**If you change from single  product licensing to suite licensing, 
-I’d suggest a little license cleanup job if  you f.ex. upgrade from ops adv to vrs std and such. 
-You might want to consider is keeping the suite consistent (edition wise instead of mixing) 
-especially for vRA level. vROps shouldn't be a problem
-**</p>
-<p>What is vRealize Suite? <a href="https://www.vmware.com/no/products/vrealize-suite-vcloud-suite.html">https://www.vmware.com/no/products/vrealize-suite-vcloud-suite.html</a></p>
+    <div class="post_body"><p><strong>Extending vRealize Operations with vRealize Orchestrator</strong></p>
+<p>Sometimes it's a good thing to connect vRealize Orchestrator to vRealize OPerations to be able to do actions and remedies based on alerts in vRealize Operations. Another thing that this connection provides is the possibilities to run Orchestrator workflows directly from vRealize Operations objects.</p>
+<h3 id="how-do-we-do-this">How do we do this?</h3>
+<p><strong>Prerequisites</strong></p>
+<p>You will need:</p>
+<ol>
+<li>vRealize Orchestrator installed
+This can either be included together with vRealize Automation, or, a standalone Orchestrator solution</li>
+<li>vRealize Operations installed</li>
+<li>Download the vRealize Operations management pack from the marketplace. Basically, just go to the marketplace and search for &quot;VMware vRealize Operations Management Pack for vRealize Orchestrator&quot;. Since I will be showing this for vRealize Operations 8.6.x we need version 3.2 of the Management Pack for vRealize Orchestrator: <a href="https://marketplace.cloud.vmware.com/services/details/management-pack-for-vrealize-orchestrator11?slug=true">https://marketplace.cloud.vmware.com/services/details/management-pack-for-vrealize-orchestrator11?slug=true</a></li>
+<li>The file name would be: <em>&quot;vmware-mpforvro-3-1634214904032.pak&quot;</em></li>
+</ol>
+<p><strong>Add the management pack into vRealize operations</strong></p>
+<p>Open vROps, log in, and go to Data Sources&gt;Repository</p>
+<p>Click &quot;Add&quot;</p>
+<p>Browse for the management pack and select Reset default content and make sure you overwrite a potential older management pack: <img src="Screenshot%202022-01-12%2021.05.21.jpg" alt="Screenshot 2022-01-12 21.05.21" style="zoom:25%;" /></p>
+<p>When the thing is finished installing, go to Integrations, Accounts, and add a new account using the vRealize Orchestrator adapter, Fill in the Orchestrator FQDN, Port (443), and click the '+' to add your credentials
+<img src="/../../post/2022-01-12/image-20220112211924278.png" alt="image-20220112211924278" style="zoom:25%;" /></p>
+<p>Add your credentials and click OK. I've used my 'configadmin' user for vRA that will access everything.
+<img src="./image-20220112212050223.png" alt="image-20220112212050223" style="zoom:33%;" /></p>
+<p>Click validate connection and then cick OK after validation. 
+<img src="image-20220112212153479.png" alt="image-20220112212153479" style="zoom:33%;" /></p>
+<p><strong>Fetch the workflows</strong></p>
+<p>Right, So now the Management Pack is installed, and Configured. Now we need to see if vRealize Operations is fetching the wokflows from vRealize Orchestrator</p>
+<ol>
+<li>Wait a collection cycle - get a coffee</li>
+<li><strong>Environment</strong> &gt; <strong>Object browser</strong>. click your connector and drop down the actions menu, then select <strong>Import</strong> vROps package to vRO, choose overwrite, <strong>Begin Action</strong>, make sure the recent tasks shows <em>Complete</em>: 
+<img src="image-20220112214909488.png" alt="image-20220112214909488" style="zoom:25%;" /></li>
+<li>Under Object browser, in the actions menu choose <strong>Configure Package Discovery</strong>, Choose <strong>Begin Action</strong> 
+<img src="image-20220112215322822.png" alt="image-20220112215322822" style="zoom: 25%;" /></li>
+<li>Continue the process to <strong>Add a vCenter to vRO.</strong> and Begin Action
+<img src="image-20220112215539969.png" alt="image-20220112215539969" style="zoom:25%;" /></li>
+<li>Select your vCenter, Fill in user name(<a href="mailto:administrator@vsphere.local">administrator@vsphere.local</a>), password, and domain (vsphere.local) and the click <strong>Begin Action</strong>
+<img src="image-20220112215833804.png" alt="image-20220112215833804" style="zoom:25%;" /></li>
+</ol>
+<p><strong>Verify workflows</strong></p>
+<p>The last check is to see if vRealize Operations has discovered all the Workflows. Click <strong>Environment</strong> &gt; <strong>Inventory</strong>, and select <strong>Adapter Types</strong>, and then the <strong>vRealize Orchestrator adapter</strong>. We should now see the objects list populated with all the workflows:</p>
+<img src="image-20220112220335041.png" alt="image-20220112220335041" style="zoom:25%;" />
+<ol start="6">
+<li>
+<p>Let's do the Policy work. Go to <strong>Administration</strong> &gt; <strong>Policies</strong>, edit our active and default policy.  Select <strong>Alerts and Symptoms</strong> , find the Alert Definition associated with the Symptom/Recommendation/Action you want to automate, or just select all, click the ACTIONS drop down, <strong>Automate</strong> &gt; <strong>Enable</strong>.<br>
+<img src="image-20220112224402563.png" alt="image-20220112224402563" style="zoom:25%;" /></p>
+</li>
+<li>
+<p>To prepare a Workflow to occur as an available action in vROPs.  From the list of objects, choose <strong>vRO Reboot VM</strong>, and select <strong>Create / Modify ...</strong> from the Actions menu
+<img src="image-20220112221127108.png" alt="image-20220112221127108" style="zoom:25%;" /></p>
+</li>
+<li>
+<p>For Resource Type and Target Resource Type, Select <strong>Virtual Machine</strong>, for Operation Select Add, then click <strong>Begin Action</strong> and OK
+<img src="image-20220112222224962.png" alt="image-20220112222224962" style="zoom:25%;" /></p>
+<p>now we need to enable the Management pack for your policies so it can be used by the objects (VM-s).</p>
+</li>
+</ol>
 
     </div>
 
@@ -197,7 +191,7 @@ especially for vRA level. vROps shouldn't be a problem
     <h2 class="mt-4">Recent Posts</h2>
     <ul class="flex-column">
       <li>
-        <a href="/post/2022-01-12/2022-01-12-connect_vrops_to_vro/" class="nav-link" title="Connect vROps to vRO">Connect vROps to vRO</a>
+        <a href="/post/2022-01-11/" class="nav-link" title="Mixing VRealize Operations Licenses">Mixing VRealize Operations Licenses</a>
       </li>
     </ul>
     <div>

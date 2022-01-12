@@ -1,6 +1,6 @@
 ---
 title: "Mixing VRealize Operations Licenses" # Title of the blog post.
-date: 2022-01-12T01:29:03+01:00 # Date of post creation.
+date: 2022-01-11T01:29:03+01:00 # Date of post creation.
 description: "Mixing VRealize Operations License" # Description used for search engine.
 featured: false # Sets if post is a featured post, making appear on the home page side bar.
 toc: false # Controls if a table of contents should be generated for first-level links automatically.
@@ -29,7 +29,7 @@ comment: false # Disable comment if false.
   * vRealize Suite Per-CPU and per OSI can be mixed
   * vRealize Operations ADV + vRealize Suite STD - This allowed but ONLY as separate license groups. *It doesn't work when you mix the keys in one group*
   * vRealize Suite ADV + vRealize Suite STD - will work too, 	as both with both suites you will end up with vROps Adv. *Separate license types into License Groups*
- 
+
  Don't forget you have vRA in vRealize Suite ADV too, and mixing editions at vRA might not be permitted
 
 Do you have questions about License groups – head over to my colleague *Brock Peterson *https://www.brockpeterson.com/post/vrops-license-groups
