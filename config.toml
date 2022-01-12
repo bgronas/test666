@@ -4,7 +4,7 @@ title = "Bengt's Blog"
 theme = "hugo-clarity"
 
 [params]
-author = "bgronas"
+author = "Bengt Grønås"
 twitter  = "bgronas"
 largeTwitterCard = true
 description = "Virtual Stuff for Virtual people"
@@ -27,10 +27,10 @@ figurePositionShow = true
 enforceLightMode = true
 # enforceDarkMode
 titleSeparator = "|"
-showShare = true
+showShare = false
 comments = false
 numberOfRecentPosts = 10
-numberOfFeaturedPosts = 2
+numberOfFeaturedPosts = 0
 dateFormat = "Mon. 23-12-2020"
 enableMathNotation = true
 # customFonts
@@ -38,6 +38,6 @@ since = 2021
 # rss_summary
 # rss_summary_read_more_link
 showRelatedInArticle = true
-showRelatedInSidebar = true 
+showRelatedInSidebar = false 
 footerLogo = "icons/apple-touch-icon.png"
 
