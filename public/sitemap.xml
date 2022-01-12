@@ -3,18 +3,30 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
     <loc>/</loc>
-    <lastmod>2022-01-12T01:29:03+01:00</lastmod>
+    <lastmod>2022-01-12T19:20:12+01:00</lastmod>
   </url><url>
-    <loc>/post/mixing-vrealize-suite-vrealize-operations-licenses/</loc>
-    <lastmod>2022-01-12T01:29:03+01:00</lastmod>
+    <loc>/categories/</loc>
+    <lastmod>2022-01-12T19:20:12+01:00</lastmod>
+  </url><url>
+    <loc>/post/2022-01-12-connect_vrops_to_vro/</loc>
+    <lastmod>2022-01-12T19:20:12+01:00</lastmod>
+  </url><url>
+    <loc>/categories/orchestration/</loc>
+    <lastmod>2022-01-12T19:20:12+01:00</lastmod>
+  </url><url>
+    <loc>/tags/orchestrator/</loc>
+    <lastmod>2022-01-12T19:20:12+01:00</lastmod>
   </url><url>
     <loc>/post/</loc>
-    <lastmod>2022-01-12T01:29:03+01:00</lastmod>
+    <lastmod>2022-01-12T19:20:12+01:00</lastmod>
   </url><url>
     <loc>/tags/</loc>
-    <lastmod>2022-01-12T01:29:03+01:00</lastmod>
+    <lastmod>2022-01-12T19:20:12+01:00</lastmod>
   </url><url>
     <loc>/tags/vrealize/</loc>
+    <lastmod>2022-01-12T19:20:12+01:00</lastmod>
+  </url><url>
+    <loc>/post/mixing-vrealize-suite-vrealize-operations-licenses/</loc>
     <lastmod>2022-01-12T01:29:03+01:00</lastmod>
   </url><url>
     <loc>/tags/vrops/</loc>
@@ -25,8 +37,6 @@
   </url><url>
     <loc>/archives/</loc>
     <lastmod>2019-05-28T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>/categories/</loc>
   </url><url>
     <loc>/series/</loc>
   </url>

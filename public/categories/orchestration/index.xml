@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Bengt&#39;s Blog</title>
-    <link>/</link>
-    <description>Recent content on Bengt&#39;s Blog</description>
+    <title>Orchestration on Bengt&#39;s Blog</title>
+    <link>/categories/orchestration/</link>
+    <description>Recent content in Orchestration on Bengt&#39;s Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>cpy</copyright>
-    <lastBuildDate>Wed, 12 Jan 2022 19:20:12 +0100</lastBuildDate><atom:link href="/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Wed, 12 Jan 2022 19:20:12 +0100</lastBuildDate><atom:link href="/categories/orchestration/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Connect vROps to vRO</title>
       <link>/post/2022-01-12-connect_vrops_to_vro/</link>
@@ -22,23 +22,6 @@ Sometimes it&#39;s a good thing to connect vRealize Orchestrator to vRealize OPe
 How do we do this? Prerequisites
 You will need:
  vRealize Orchestrator installed This can either be included together with vRealize Automation, or, a standalone Orchestrator solution vRealize Operations installed Download the vRealize Operations management pack from the marketplace.
-          
-          
-        
-      </description>
-    </item>
-    
-    <item>
-      <title>Mixing VRealize Operations Licenses</title>
-      <link>/post/mixing-vrealize-suite-vrealize-operations-licenses/</link>
-      <pubDate>Wed, 12 Jan 2022 01:29:03 +0100</pubDate>
-      
-      <guid>/post/mixing-vrealize-suite-vrealize-operations-licenses/</guid>
-      <description>
-        
-          
-            Mixing vRealize Operations Licenses isn&#39;t easy. Let&#39;s try to define what&#39;s possible
-Mixing vRealize Suite / vRealize Operations Licenses.  The vRealize Suite STD will give you vROps ADV With both suites (adv/std) you will end up with vROps Adv. You can mix vROps ADV and vROps ENT editions/licenses. You can&#39;t mix vROps STD with vROps ADV or vROps Ent. vRealize Suite Per-CPU and per OSI can be mixed vRealize Operations ADV + vRealize Suite STD - This allowed but ONLY as separate license groups.
           
           
         
