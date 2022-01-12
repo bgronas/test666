@@ -6,12 +6,12 @@ featured: false # Sets if post is a featured post, making appear on the home pag
 draft: false # Sets whether to render this page. Draft of true will not be rendered.
 toc: false # Controls if a table of contents should be generated for first-level links automatically.
 # menu: main
-usePageBundles: true # Set to true to group assets like images in the same folder as this post.
-# featureImage: "/logo.jpg" # Sets featured image on blog post.
+usePageBundles: true
+featureImage: "logo.jpg" # Sets featured image on blog post.
 # featureImageAlt: 'Description of image' # Alternative text for featured image.
 # featureImageCap: 'This is the featured image.' # Caption (optional).
-thumbnail: "/thumbnail.png" # Sets thumbnail image appearing inside card on homepage.
-shareImage: "/share.png" # Designate a separate image for social media sharing.
+thumbnail: "thumbnail.png" # Sets thumbnail image appearing inside card on homepage.
+shareImage: "share.png" # Designate a separate image for social media sharing.
 codeMaxLines: 10 # Override global value for how many lines within a code block before auto-collapsing.
 codeLineNumbers: false # Override global value for showing of line numbers within code block.
 figurePositionShow: true # Override global value for showing the figure label.
@@ -20,8 +20,8 @@ categories:
 tags:
   - vRealize
   - Orchestrator
-# comment: false # Disable comment if false.
-typora-root-url: ..\..\static\images
+comment: false # Disable comment if false.
+typora-root-url: .
 ---
 
 **Extending vRealize Operations with vRealize Orchestrator**
@@ -46,18 +46,18 @@ Open vROps, log in, and go to Data Sources>Repository
 
 Click "Add"
 
-Browse for the management pack and select Reset default content and make sure you overwrite a potential older management pack: <img src="/Screenshot 2022-01-12 21.05.21.jpg" alt="Screenshot 2022-01-12 21.05.21" style="zoom: 25%;" /> 
+Browse for the management pack and select Reset default content and make sure you overwrite a potential older management pack: <img src="Screenshot%202022-01-12%2021.05.21.jpg" alt="Screenshot 2022-01-12 21.05.21" style="zoom:25%;" /> 
 
-When the thing is finished installing, go to Integrations, Accounts, and add a new account using the vRealize Orchestrator adapter: <img src="./image-20220112211642107.png" alt="image-20220112211642107" style="zoom:33%;" />
-
-Fill in the Orchestrator FQDN, Port (443), and click the '+' to add your credentials
-<img src="image-20220112211924278.png" alt="image-20220112211924278" style="zoom:25%;" />
+When the thing is finished installing, go to Integrations, Accounts, and add a new account using the vRealize Orchestrator adapter, Fill in the Orchestrator FQDN, Port (443), and click the '+' to add your credentials
+<img src="/../../post/2022-01-12/image-20220112211924278.png" alt="image-20220112211924278" style="zoom:25%;" />
 
 Add your credentials and click OK. I've used my 'configadmin' user for vRA that will access everything.
-<img src="image-20220112212050223.png" alt="image-20220112212050223" style="zoom:33%;" />
+<img src="./image-20220112212050223.png" alt="image-20220112212050223" style="zoom:33%;" />
 
-Click validate connectionm and then cick OK after validation. 
+Click validate connection and then cick OK after validation. 
 <img src="image-20220112212153479.png" alt="image-20220112212153479" style="zoom:33%;" />
+
+
 
 **Fetch the workflows**
 
@@ -81,19 +81,18 @@ The last check is to see if vRealize Operations has discovered all the Workflows
 
 6. Let's do the Policy work. Go to **Administration** > **Policies**, edit our active and default policy.  Select **Alerts and Symptoms** , find the Alert Definition associated with the Symptom/Recommendation/Action you want to automate, or just select all, click the ACTIONS drop down, **Automate** > **Enable**.  
    <img src="image-20220112224402563.png" alt="image-20220112224402563" style="zoom:25%;" />
+   
 7. To prepare a Workflow to occur as an available action in vROPs.  From the list of objects, choose **vRO Reboot VM**, and select **Create / Modify ...** from the Actions menu
    <img src="image-20220112221127108.png" alt="image-20220112221127108" style="zoom:25%;" />
+   
 8. For Resource Type and Target Resource Type, Select **Virtual Machine**, for Operation Select Add, then click **Begin Action** and OK
    <img src="image-20220112222224962.png" alt="image-20220112222224962" style="zoom:25%;" />
-9. 
-
-
-
-
-
-
-
-But now we need to enable the Management pack for your policies so it can be used by the objects (VM-s). 
+   
+   
+   
+   
+   
+    now we need to enable the Management pack for your policies so it can be used by the objects (VM-s). 
 
 
 
