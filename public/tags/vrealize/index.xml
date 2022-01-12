@@ -2,18 +2,18 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>vRealize on Clarity</title>
-    <link>https://example.com/tags/vrealize/</link>
+    <link>/tags/vrealize/</link>
     <description>Recent content in vRealize on Clarity</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>Copyright © 2008–2018, Steve Francia and the Hugo Authors; all rights reserved.</copyright>
-    <lastBuildDate>Wed, 12 Jan 2022 01:29:03 +0100</lastBuildDate><atom:link href="https://example.com/tags/vrealize/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Wed, 12 Jan 2022 01:29:03 +0100</lastBuildDate><atom:link href="/tags/vrealize/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Mixing VRealize Operations Licenses</title>
-      <link>https://example.com/post/mixing-vrealize-suite-vrealize-operations-licenses/</link>
+      <link>/post/mixing-vrealize-suite-vrealize-operations-licenses/</link>
       <pubDate>Wed, 12 Jan 2022 01:29:03 +0100</pubDate>
       
-      <guid>https://example.com/post/mixing-vrealize-suite-vrealize-operations-licenses/</guid>
+      <guid>/post/mixing-vrealize-suite-vrealize-operations-licenses/</guid>
       <description>
         
           

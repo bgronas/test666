@@ -9,17 +9,17 @@ twitter  = "bgronas"
 largeTwitterCard = true
 description = "Virtual Stuff for Virtual people"
 introDescription = "Virtual Stuff for Virtual people"
-introURL = false
+introURL = true
 numberOfTagsShown = 10
 usePageBundles = false
 fallBackOgImage  = ""
 codeMaxLines = 12
 codeLineNumbers = false
-# mainSections  =  
+mainSections = ["post", "blog"]
 # centerLogo = false
-# logo = ""
-# iconsDir = ""
-# mobileNavigation = left
+logo = "icons/apple-touch-icon.png"
+iconsDir = "icons/logo.png"
+mobileNavigation = "left"
 figurePositionShow = true
 # figurePositionLabel = 
 # customCSS
@@ -39,4 +39,5 @@ since = 2021
 # rss_summary_read_more_link
 showRelatedInArticle = true
 showRelatedInSidebar = true 
-# footerLogo
+footerLogo = "icons/apple-touch-icon.png"
+

@@ -5,7 +5,16 @@ date = "2022-01-12"
 aliases = ["about-us", "contact"]
 author = "Bengt Grønås"
 +++
- ![Bengt Grønås](/images/thumbnail.png)Married with two children, living in Nydalen, in Oslo, Norway.  Likes Motorcycles, Photo, Chess, Music production, Guitars, gadgets phreak, hiker, walkabouts, traveler, BIO hacker. Loves long MC trips with base in gravel, forest floor, and tarmac. I like all music *(except from Elvis & Country, and everything that resembles that)*
+<style type="text/css">
+ .tab { 
+margin-left: 10px; 
+margin-right: 90px; 
+padding: 10px;
+border-radius: 90px;
+}
+</style>
+
+<span class="tab">Married with two children, living in Nydalen, in Oslo, Norway. I love Motorcycles, Photo, Chess, Music production, Guitars, gadgets phreak, hiker, walkabouts, traveler, BIO hacker. Long MC trips with base in gravel, forest floor, and tarmac. I like all music!</span>  
 
 I work as a Senior Solution Engineer in VMware Norway. I handle the products you’ll find on [cloud.vmware.com](https://cloud.vmware.com/) meaning Multi Cloud Management, operations, automation, and orchestration.
 
@@ -24,4 +33,5 @@ I work as a Senior Solution Engineer in VMware Norway. I handle the products you
 * **vRealize AI Cloud**: An artificial intelligence and machine learning solution used to continuously optimize infrastructure performance and configure VMware software-defined-datacenter KPIs. Self-tuning service
 * **VMware Skyline**: Expect the unexpected in your IT environment with Skyline, an innovative, proactive intelligence offering designed to keep you out of harm’s way.
 * **CloudHealth**: Simplify financial management and find ways to lower your Cloud bill, streamline workflows with custom policies that automate daily cloud operations, and strengthen your Cloud security posture. Visibility (decision-making, reports, dashboards), Optimize resources (detailed breakdowns, track trends, anomalies, usage, performance), govern usage (automate daily operational tasks, improve security), strengthen security (manage security risk, alerts, gain deep insight)
+
 ---
