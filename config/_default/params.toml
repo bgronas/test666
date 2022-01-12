@@ -1,14 +1,14 @@
+twitter = "bgronas"
+# set to true if you want to show a large twitter card image. The default is a small twitter card image
+largeTwitterCard = true 
 
-twitter = "@bgronas"
-largeTwitterCard = true # set to true if you want to show a large twitter card image. The default is a small twitter card image
-
-introDescription = "Technologist, bio hacker, automation, management, operations"
+introDescription = "Automation, Management, Operations, Bio hacker, "
 
 # introURL = "about/" # set the url for the 'read more' button below the introDescription, or set to false to not show the button
 introURL = false
 
 # description = "" # set your site's description here. will be use for home page content meta tags (seo). Alternatively set this description in your homepage content file i.e content/_index.md. Whatever is set in the latter will take precedence
-description = "vRealize" 
+description = "<<virtual stuff for virtual people>>" 
 
 # showShare = false # Uncomment to not show share buttons on each post. Also available in each post's front matter.
 showShare = true
@@ -20,7 +20,7 @@ showShare = true
 # baidu_analytics = "XXXXXXXX"
 
 # limit the number of taxonomies links shown on the sidebar of each page by default.
-numberOfTagsShown = 13 # Applies for all other default & custom taxonomies. e.g categories, brands see https://gohugo.io/content-management/taxonomies#what-is-a-taxonomy
+numberOfTagsShown = 10 # Applies for all other default & custom taxonomies. e.g categories, brands see https://gohugo.io/content-management/taxonomies#what-is-a-taxonomy
 
 # Whether to default to storing images and other assets in the `static` directory, or use Hugo page bundles.
 # Switch to `true` if you'd like to group assets with the post itself (as a "leaf bundle").
@@ -32,13 +32,13 @@ usePageBundles = false
 fallBackOgImage = "images/thumbnail.png"
 
 # sets the maximum number of lines per codeblock. The codeblock will however be scrollable and expandable.
-codeMaxLines = 7
+codeMaxLines = 10
 
 # disable showing line numbers by default. Switch to `true` if you'd rather have them on.
 codeLineNumbers = false
 
 # enable math notation. Switch to `true` to enable mathjax in your site.
-enableMathNotation = false
+enableMathNotation = true
 
 # directory(s) where your articles are located
 mainSections = ["post"] # see config details here https://gohugo.io/functions/where/#mainsections
@@ -46,10 +46,11 @@ mainSections = ["post"] # see config details here https://gohugo.io/functions/wh
 # center logo on navbar
 centerLogo = false # Set to "true" for centering or "false" for left aligned.
 
-logo = "logos/logo.png"
+logo = "logos/icon.png"
 
 # Label Non inline images on an article body
 figurePositionShow = false # toggle on or off globally
+
 # you can toggle this behaviour on or off on per page using the same variable inside your articles frontmatter
 figurePositionLabel = "Figure" # the text before image number e.g Figure 1.0
 
@@ -81,7 +82,7 @@ comments = false
 numberOfRecentPosts = 10
 
 # Maximum number of featured posts.
-numberOfFeaturedPosts = 10
+numberOfFeaturedPosts = 0
 
 # Date format. Checkout https://gohugo.io/functions/format/#hugo-date-and-time-templating-reference for details.
 # dateFormat = "2006-01-02" # Default to "Jan 2, 2006".
@@ -106,12 +107,12 @@ name = "Bengt Grønås"
 
 [plausible_analytics]
 enable = false # to enable plausible analytics set to true.
-websiteDomain = "example.com" # domain name of your website, most cases same as your base url
+websiteDomain = "bengt.no" # domain name of your website, most cases same as your base url
 # plausibleDomain = "plausible.io" # default is set to plausible.io, only required if plausible is selfhosted
 # scritpName = "plausible" # default is set to plausible, only required if using a custome name for script
 
 [matomo_analytics]
 enable = false # To enable matomo analytics change to `true`.
-websiteDomain = "example.com" # Set the domain name of your website, in most cases same as your base URL this is required.
+websiteDomain = "bengt.no" # Set the domain name of your website, in most cases same as your base URL this is required.
 matomoDomain = "matomo.example.com" # Set to Matomo domain
 matomoSiteID = "1" # Default is set to 1, change this to the siteid being tracked

@@ -1,29 +1,42 @@
-baseURL = "http://example.org/"
+baseURL = "/"
 languageCode = "en-us"
-title = "666 site"
+title = "Bengt's Blog"
 theme = "hugo-clarity"
 
 [params]
-  author = "Bengt Grønås (bgronas)"
-  description = "virtually vrealize"
-  github = "bgronas"
-  facebook = "bgronas"
-  twitter = "bgronas"
-  linkedin = "bgronas"
-  instagram = "bgronas"
-  tumblr = "bgronas"
-  email = "bgronas@gmail.com"
-  url = "https://blog.bengt.no"
-  keywords = "blog, vRealize, OPerations, Management, Automation"
-  rss = true
-  lastmod = true
-  userStatusEmoji = "😀"
-  favicon = "/images/github.jpg"
-  location = "Norway"
-  largeTwitterCard = false
-  plausible_analytics = false
-  matomo_analytics = false
-  numberOfTagsShown = 10
-  
-[frontmatter]
-  lastmod = ["lastmod", ":fileModTime", ":default"]
+author = "bgronas"
+twitter  = "bgronas"
+largeTwitterCard = true
+description = "Virtual Stuff for Virtual people"
+introDescription = "Virtual Stuff for Virtual people"
+introURL = false
+numberOfTagsShown = 10
+usePageBundles = false
+fallBackOgImage  = ""
+codeMaxLines = 12
+codeLineNumbers = false
+# mainSections  =  
+# centerLogo = false
+# logo = ""
+# iconsDir = ""
+# mobileNavigation = left
+figurePositionShow = true
+# figurePositionLabel = 
+# customCSS
+# customJS
+enforceLightMode = true
+# enforceDarkMode
+titleSeparator = "|"
+showShare = true
+comments = false
+numberOfRecentPosts = 10
+numberOfFeaturedPosts = 2
+dateFormat = "Mon. 23-12-2020"
+enableMathNotation = true
+# customFonts
+since = 2021
+# rss_summary
+# rss_summary_read_more_link
+showRelatedInArticle = true
+showRelatedInSidebar = true 
+# footerLogo

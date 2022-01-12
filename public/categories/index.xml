@@ -6,7 +6,6 @@
     <description>Recent content in Categories on Clarity</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <copyright>Copyright © 2008–2018, Steve Francia and the Hugo Authors; all rights reserved.</copyright>
-    <lastBuildDate>Wed, 12 Jan 2022 01:29:03 +0100</lastBuildDate><atom:link href="https://example.com/categories/index.xml" rel="self" type="application/rss+xml" />
+    <copyright>Copyright © 2008–2018, Steve Francia and the Hugo Authors; all rights reserved.</copyright><atom:link href="https://example.com/categories/index.xml" rel="self" type="application/rss+xml" />
   </channel>
 </rss>
