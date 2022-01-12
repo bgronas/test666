@@ -1,7 +1,7 @@
 {
 	"version": 3,
 	"file": "styles.css",
-	"sourceRoot": "C:/Hugo/Sites/test666",
+	"sourceRoot": "C:/Users/bgron/Dropbox (Personal)/HUGO/Sites/test666",
 	"sources": [
 		"themes/hugo-clarity/assets/sass/main.sass",
 		"themes/hugo-clarity/assets/sass/_variables.sass",
