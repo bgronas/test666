@@ -1,0 +1,54 @@
+---
+title: "Mixing VRealize Suite or VRealize Operations Licenses" # Title of the blog post.
+date: 2022-01-12T01:29:03+01:00 # Date of post creation.
+description: "Mixing VRealize Suite or VRealize Operations License" # Description used for search engine.
+featured: true # Sets if post is a featured post, making appear on the home page side bar.
+toc: false # Controls if a table of contents should be generated for first-level links automatically.
+# menu: main
+usePageBundles: false # Set to true to group assets like images in the same folder as this post.
+featureImage: "/images/thumbnail.png" # Sets featured image on blog post.
+featureImageAlt: 'just me' # Alternative text for featured image.
+featureImageCap: 'This is the featured image.' # Caption (optional).
+thumbnail: "/images/thumbnail.png" # Sets thumbnail image appearing inside card on homepage.
+shareImage: "/images/thumbnail.png" # Designate a separate image for social media sharing.
+codeMaxLines: 10 # Override global value for how many lines within a code block before auto-collapsing.
+codeLineNumbers: false # Override global value for showing of line numbers within code block.
+figurePositionShow: true # Override global value for showing the figure label.
+categories:
+  - vRealize
+  - Operations
+tags:
+  - vrops
+  - operations
+comment: false # Disable comment if false.
+---
+
+**Mixing vRealize Operations Licenses isn't easy. Have a look and see some tips and tricks.**
+
+
+Mixing vRealize Suite / vRealize Operations Licenses.
+
+•	The vRealize Suite STD will give you vROps ADV
+•	With both suites (adv/std) you will end up with vROps Adv. 
+•	You can mix vROps ADV and vROps ENT editions/licenses. 
+•	You can't mix vROps STD with vROps ADV or vROps Ent.
+•	vRealize Suite Per-CPU and per OSI can be mixed
+•	vRealize Operations ADV + vRealize Suite STD - This allowed but ONLY as separate license groups. 
+	It doesn't work when you mix the keys in one group *
+•	vRealize Suite ADV + vRealize Suite STD - will work too, 
+	as both with both suites you will end up with vROps Adv.    
+	Separate license  types into License Groups* 
+•	Don't forget you have vRA in vRealize Suite ADV too, and mixing editions at vRA might not be permitted
+
+*License groups  – head over to Brock Peterson https://www.brockpeterson.com/post/vrops-license-groups
+
+Tip:  If you change from single  product licensing to suite licensing, 
+I’d suggest a little license cleanup job if  you f.ex. upgrade from ops adv to vrs std and such. 
+You might want to consider is keeping the suite consistent (edition wise instead of mixing) 
+especially for vRA level. vROps shouldn't be a problem
+
+What is vRealize Suite? https://www.vmware.com/no/products/vrealize-suite-vcloud-suite.html
+
+
+#vRealizeSuite #vRealize #vROps #vrops-license-groups #vRA #Automation #Operations #Management
+

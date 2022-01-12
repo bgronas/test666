@@ -1,0 +1,29 @@
+baseURL = "http://example.org/"
+languageCode = "en-us"
+title = "666 site"
+theme = "hugo-clarity"
+
+[params]
+  author = "Bengt Grønås (bgronas)"
+  description = "virtually vrealize"
+  github = "bgronas"
+  facebook = "bgronas"
+  twitter = "bgronas"
+  linkedin = "bgronas"
+  instagram = "bgronas"
+  tumblr = "bgronas"
+  email = "bgronas@gmail.com"
+  url = "https://blog.bengt.no"
+  keywords = "blog, vRealize, OPerations, Management, Automation"
+  rss = true
+  lastmod = true
+  userStatusEmoji = "😀"
+  favicon = "/images/github.jpg"
+  location = "Norway"
+  largeTwitterCard = false
+  plausible_analytics = false
+  matomo_analytics = false
+  numberOfTagsShown = 10
+  
+[frontmatter]
+  lastmod = ["lastmod", ":fileModTime", ":default"]
