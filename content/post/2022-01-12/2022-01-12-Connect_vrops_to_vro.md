@@ -7,11 +7,11 @@ draft: false # Sets whether to render this page. Draft of true will not be rende
 toc: false # Controls if a table of contents should be generated for first-level links automatically.
 # menu: main
 usePageBundles: true # Set to true to group assets like images in the same folder as this post.
-# featureImage: "images/logo.jpg" # Sets featured image on blog post.
+# featureImage: "/logo.jpg" # Sets featured image on blog post.
 # featureImageAlt: 'Description of image' # Alternative text for featured image.
 # featureImageCap: 'This is the featured image.' # Caption (optional).
-thumbnail: "images/thumbnail.png" # Sets thumbnail image appearing inside card on homepage.
-shareImage: "images/share.png" # Designate a separate image for social media sharing.
+thumbnail: "/thumbnail.png" # Sets thumbnail image appearing inside card on homepage.
+shareImage: "/share.png" # Designate a separate image for social media sharing.
 codeMaxLines: 10 # Override global value for how many lines within a code block before auto-collapsing.
 codeLineNumbers: false # Override global value for showing of line numbers within code block.
 figurePositionShow: true # Override global value for showing the figure label.
@@ -46,9 +46,9 @@ Open vROps, log in, and go to Data Sources>Repository
 
 Click "Add"
 
-Browse for the management pack and select Reset default content and make sure you overwrite a potential older management pack: <img src="Screenshot 2022-01-12 21.05.21.jpg" alt="Screenshot 2022-01-12 21.05.21" style="zoom: 25%;" /> 
+Browse for the management pack and select Reset default content and make sure you overwrite a potential older management pack: <img src="/Screenshot 2022-01-12 21.05.21.jpg" alt="Screenshot 2022-01-12 21.05.21" style="zoom: 25%;" /> 
 
-When the thing is finished installing, go to Integrations, Accounts, and add a new account using the vRealize Orchestrator adapter: <img src="image-20220112211642107.png" alt="image-20220112211642107" style="zoom:33%;" />
+When the thing is finished installing, go to Integrations, Accounts, and add a new account using the vRealize Orchestrator adapter: <img src="./image-20220112211642107.png" alt="image-20220112211642107" style="zoom:33%;" />
 
 Fill in the Orchestrator FQDN, Port (443), and click the '+' to add your credentials
 <img src="image-20220112211924278.png" alt="image-20220112211924278" style="zoom:25%;" />
