@@ -22,6 +22,8 @@ tags:
   - Orchestrator
 comment: false # Disable comment if false.
 typora-root-url: .
+draft: true
+
 ---
 
 **Extending vRealize Operations with vRealize Orchestrator**

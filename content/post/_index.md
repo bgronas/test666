@@ -1,5 +1,6 @@
 +++
 aliases = ["post", "article", "blog"]
-title = "Post"
+title = "post"
 author = "bgronas"
+
 +++
