@@ -1,4 +1,4 @@
-baseURL = "https://blog.bengt.no"
+baseURL = "https://bengt.netlify.app/"
 languageCode = "en-us"
 title = "Bengt's Blog"
 theme = "hugo-clarity"
