@@ -7,7 +7,24 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>cpy</copyright>
-    <lastBuildDate>Tue, 11 Jan 2022 01:29:03 +0100</lastBuildDate><atom:link href="/post/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Wed, 19 Jan 2022 15:38:53 +0100</lastBuildDate><atom:link href="/post/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>New Year, New Blog, Learning HUGO [19.01.2022]</title>
+      <link>/post/2022-01-19/</link>
+      <pubDate>Wed, 19 Jan 2022 15:38:53 +0100</pubDate>
+      
+      <guid>/post/2022-01-19/</guid>
+      <description>
+        
+          
+            WOW, I just moved to HUGO. Wordpress I was previously using Wordpress with my public web provider. proISP. I have loved ProISP, they are providing me with domains, e-mail, web hosting, MySQL databases and everything.
+Hosting a Wordpress site with them and paying almost nothing for it was very cool, and I have loved wordpress for the simplicity and for the easiness of changing the looks by using simple CSS, Templates, and publishing, It&#39;s just been a walk in the park.
+          
+          
+        
+      </description>
+    </item>
+    
     <item>
       <title>Mixing VRealize Operations Licenses</title>
       <link>/post/2022-01-11/</link>
@@ -17,8 +34,7 @@
       <description>
         
           
-            Mixing vRealize Operations Licenses isn&#39;t easy. Let&#39;s try to define what&#39;s possible
-Mixing vRealize Suite / vRealize Operations Licenses.  The vRealize Suite STD will give you vROps ADV With both suites (adv/std) you will end up with vROps Adv. You can mix vROps ADV and vROps ENT editions/licenses. You can&#39;t mix vROps STD with vROps ADV or vROps Ent. vRealize Suite Per-CPU and per OSI can be mixed vRealize Operations ADV + vRealize Suite STD - This allowed but ONLY as separate license groups.
+            Mixing vRealize Operations Licenses isn&#39;t easy. Let&#39;s try to define what&#39;s possible. Mixing vRealize Suite / vRealize Operations Licenses.  The vRealize Suite STD will give you vROps ADV With both suites (adv/std) you will end up with vROps Adv. You can mix vROps ADV and vROps ENT editions/licenses. You can&#39;t mix vROps STD with vROps ADV or vROps Ent. vRealize Suite Per-CPU and per OSI can be mixed vRealize Operations ADV + vRealize Suite STD - This allowed but ONLY as separate license groups.
           
           
         

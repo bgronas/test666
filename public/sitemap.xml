@@ -2,19 +2,31 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
+    <loc>/</loc>
+    <lastmod>2022-01-19T15:38:53+01:00</lastmod>
+  </url><url>
+    <loc>/categories/</loc>
+    <lastmod>2022-01-19T15:38:53+01:00</lastmod>
+  </url><url>
+    <loc>/tags/hugo/</loc>
+    <lastmod>2022-01-19T15:38:53+01:00</lastmod>
+  </url><url>
+    <loc>/post/2022-01-19/</loc>
+    <lastmod>2022-01-19T15:38:53+01:00</lastmod>
+  </url><url>
+    <loc>/categories/personal-stuff/</loc>
+    <lastmod>2022-01-19T15:38:53+01:00</lastmod>
+  </url><url>
+    <loc>/post/</loc>
+    <lastmod>2022-01-19T15:38:53+01:00</lastmod>
+  </url><url>
+    <loc>/tags/</loc>
+    <lastmod>2022-01-19T15:38:53+01:00</lastmod>
+  </url><url>
     <loc>/about/</loc>
     <lastmod>2022-01-12T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>/</loc>
-    <lastmod>2022-01-11T01:29:03+01:00</lastmod>
-  </url><url>
     <loc>/post/2022-01-11/</loc>
-    <lastmod>2022-01-11T01:29:03+01:00</lastmod>
-  </url><url>
-    <loc>/post/</loc>
-    <lastmod>2022-01-11T01:29:03+01:00</lastmod>
-  </url><url>
-    <loc>/tags/</loc>
     <lastmod>2022-01-11T01:29:03+01:00</lastmod>
   </url><url>
     <loc>/tags/vrealize/</loc>
@@ -23,10 +35,11 @@
     <loc>/tags/vrops/</loc>
     <lastmod>2022-01-11T01:29:03+01:00</lastmod>
   </url><url>
+    <loc>/categories/work/</loc>
+    <lastmod>2022-01-11T01:29:03+01:00</lastmod>
+  </url><url>
     <loc>/archives/</loc>
     <lastmod>2019-05-28T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>/categories/</loc>
   </url><url>
     <loc>/series/</loc>
   </url>

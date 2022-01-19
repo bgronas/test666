@@ -14,12 +14,15 @@ shareImage: "icon.png" # Designate a separate image for social media sharing.
 codeMaxLines: 10 # Override global value for how many lines within a code block before auto-collapsing.
 codeLineNumbers: false # Override global value for showing of line numbers within code block.
 figurePositionShow: true # Override global value for showing the figure label.
+categories:
+  - Work
 tags:
   - vRealize 
   - vROps
 comment: false # Disable comment if false.
 ---
-**Mixing vRealize Operations Licenses isn't easy. Let's try to define what's possible**
+
+# Mixing vRealize Operations Licenses isn't easy. Let's try to define what's possible. 
 
 # Mixing vRealize Suite / vRealize Operations Licenses.
 
