@@ -1,27 +1,28 @@
 ---
-author: "Bengt Grønås"
-title: "New Year, New Blog, Learning HUGO [19.01.2022]" # Title of the blog post.
-date: 2022-01-19T15:38:53+01:00 # Date of post creation.
-description: "Article description." # Description used for search engine.
-featured: false # Sets if post is a featured post, making appear on the home page side bar.
-toc: false # Controls if a table of contents should be generated for first-level links automatically.
-# menu: main
-usePageBundles: true 
-# Set to true to group assets like images in the same folder as this post.
-featureImage: "apple-touch-icon.png" # Sets featured image on blog post.
-# featureImageAlt: 'Description of image' # Alternative text for featured image.
-# featureImageCap: 'This is the featured image.' # Caption (optional).
-thumbnail: "apple-touch-icon.png" # Sets thumbnail image appearing inside card on homepage.
-shareImage: "logo.png" # Designate a separate image for social media sharing.
-codeMaxLines: 10 # Override global value for how many lines within a code block before auto-collapsing.
-codeLineNumbers: false # Override global value for showing of line numbers within code block.
-figurePositionShow: false # Override global value for showing the figure label.
+author: Bengt Grønås
+title: 'New Year, New Blog, Learning HUGO [19.01.2022]'
+date: '2022-01-19T15:55:16.459Z'
+description: I just changed from Wordpress to HUGO static Website.
+featured: false
+toc: false
+usePageBundles: true
+featureImage: apple-touch-icon.png
+thumbnail: apple-touch-icon.png
+shareImage: logo.png
+codeMaxLines: 10
+codeLineNumbers: false
+figurePositionShow: false
 categories:
   - Personal stuff
 tags:
   - HUGO
-comment: false # Disable comment if false.
-draft: false # Sets whether to render this page. Draft of true will not be rendered.
+comment: false
+draft: false
+slug: 'year-blog-learning-hugo-[19-01-2022]'
+keywords:
+  - Hugo
+  - Blog
+  - Personal
 ---
 
 # WOW, I just moved to HUGO. 
