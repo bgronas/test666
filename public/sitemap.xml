@@ -2,32 +2,32 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>https://blog.bengt.no/about/</loc>
+    <loc>/about/</loc>
     <lastmod>2022-01-12T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://blog.bengt.no/</loc>
+    <loc>/</loc>
     <lastmod>2022-01-11T01:29:03+01:00</lastmod>
   </url><url>
-    <loc>https://blog.bengt.no/post/2022-01-11/</loc>
+    <loc>/post/2022-01-11/</loc>
     <lastmod>2022-01-11T01:29:03+01:00</lastmod>
   </url><url>
-    <loc>https://blog.bengt.no/post/</loc>
+    <loc>/post/</loc>
     <lastmod>2022-01-11T01:29:03+01:00</lastmod>
   </url><url>
-    <loc>https://blog.bengt.no/tags/</loc>
+    <loc>/tags/</loc>
     <lastmod>2022-01-11T01:29:03+01:00</lastmod>
   </url><url>
-    <loc>https://blog.bengt.no/tags/vrealize/</loc>
+    <loc>/tags/vrealize/</loc>
     <lastmod>2022-01-11T01:29:03+01:00</lastmod>
   </url><url>
-    <loc>https://blog.bengt.no/tags/vrops/</loc>
+    <loc>/tags/vrops/</loc>
     <lastmod>2022-01-11T01:29:03+01:00</lastmod>
   </url><url>
-    <loc>https://blog.bengt.no/archives/</loc>
+    <loc>/archives/</loc>
     <lastmod>2019-05-28T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://blog.bengt.no/categories/</loc>
+    <loc>/categories/</loc>
   </url><url>
-    <loc>https://blog.bengt.no/series/</loc>
+    <loc>/series/</loc>
   </url>
 </urlset>
