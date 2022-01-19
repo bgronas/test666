@@ -92,7 +92,7 @@
 </svg></span>
     <span class="post_date">
       Wed, 19 Jan 2022 15:55:16 UTC</span>
-    <span class="post_time"> · 3 min read</span><span>&nbsp;· <a href='/tags/hugo' title="HUGO" class="post_tag button button_translucent">HUGO
+    <span class="post_time"> · 4 min read</span><span>&nbsp;· <a href='/tags/hugo' title="HUGO" class="post_tag button button_translucent">HUGO
         </a>
     </span>
   </div>
@@ -180,15 +180,21 @@
 <p>So, I thought I was fairly safe, but then the breach mails kept coming in, and the attacks were never ending. 
 I finally decided to do the same as many of my work-peers have already done, I took the leap to HUGO</p>
 <h6 id="hugo-is-cool">HUGO is Cool</h6>
-<p>Hugo says theyre the world’s fastest framework for building websites, and the most popular open-source static site generator. Not that I knew of any others when I started, but I'd say that's pretty much correct. I now know 4 people using hugo, and they all seem fine with it.</p>
-<p><a href="https://gohugo.io/">https://gohugo.io/</a> says <em>&quot;With its amazing speed and flexibility, Hugo makes building websites fun again.&quot;</em>
-I will admit that it's challenging, but fun. If you're not a technical guy, I'd say you'd be using some time to get up to speed, at least if you want to modify themes, templates, css, and such. It's not as easy and userfriendly as wordpress. Some people, including me, might argue that that is also the strength. Well. at least the security is restored.</p>
+<p>Hugo says they're <em>&quot;the world’s fastest framework for building websites, and the most popular open-source static site generator.&quot;</em> Not that I knew of any other generator when I started, but I'd say that's pretty much correct. I now know 4 people using hugo, and they all seem fine with it.</p>
+<p><a href="https://gohugo.io/">GOHUGO</a> says <em>&quot;With its amazing speed and flexibility, Hugo makes building websites fun again.&quot;</em>
+I will admit that it's challenging, but fun. If you're not a technical guy, I'd say you'd be using some time to get up to speed, at least if you want to modify themes, templates, css, and such. It's not as easy and userfriendly as wordpress. Some people, including me, might argue that that is also the strength. Well. at least the security is restored 100%.</p>
 <p>Publishing to github from my local PC, then utilizing NETLIFY: <a href="https://www.netlify.com/">https://www.netlify.com/</a> to publish automatically from github is just extremely nice and veru automatic and user friendly.</p>
 <h6 id="local-scripts">Local Scripts</h6>
 <p>I just had to have a couple of local CMD scripts. One that generates blogs, and one that publishes the blogs to Github. I'm just hosting the local stuff in dropbox, so I can access everything directly from my PC without cloning the github stuff all the time. So just a one-way push there :-) 
-I can see that Markdown is something I need to get better at. I'll probably do it all in Visual Studio Code. I think it'll be easy. Easier thatn notepad.exe  that this is written in... LOL :-) :-) :-)</p>
+I can see that Markdown is something I need to get better at. I'll probably do it all in Visual Studio Code. I think it'll be easy. Easier than notepad.exe  that this is written in... LOL :-) :-) :-)</p>
+<p><strong>blog_post.cmd</strong>
+<code> for /F &quot;tokens=6&quot; %%d in ('net time \\%COMPUTERNAME%^|findstr /I /C:&quot;%COMPUTERNAME%&quot;') do set today=%%d if (%today:~1,1%)==(/) set today=0%today% if (%today:~4,1%)==(/) set today=%today:~0,3%0%today:~3,6% set day=%today:~0,2% set month=%today:~3,2% set year=%today:~8,2% set /p input=Enter a short Title of your New Blog post:  set Input=%Input% [%today%].md :: echo Blog: &quot;%Input%&quot; :: echo running: &quot;hugo new &quot;post\20%year%-%month%-%day%\%input%&quot;&quot; echo # CREATING A NEW BLOG POST hugo new &quot;post\20%year%-%month%-%day%\%input%&quot; echo # COPYING IMAGES xcopy &quot;..\..\IMAGES\*.png&quot; &quot;content\post\20%year%-%month%-%day%&quot; /S /C /D /-Y  echo # EDITING THE NEW BLOG POST MOVE &quot;.\content\post\20%year%-%month%-%day%\%input%&quot; &quot;.\content\post\20%year%-%month%-%day%\index.md&quot; &quot;C:\Program Files\Notepad++\notepad++.exe&quot; &quot;.\content\post\20%year%-%month%-%day%\index.md&quot; </code>
+<strong>git_me_up.cmd</strong>
+<code> git add * RMDIR /S /Q public MKDIR public hugo  del /F /S /Q &quot;.git\worktrees\public&quot; echo %DATE% %TIME% &gt; date-time_last_updated.txt cd public git add --all  git add * git commit -m &quot;Blog Update publish: %DATE% %TIME% - bgronas&quot;  git push --all </code></p>
 <p>Until Next time....</p>
-<p><em>B</em></p>
+<blockquote>
+<p>B</p>
+</blockquote>
 
     </div>
 

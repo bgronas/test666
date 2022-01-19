@@ -7,7 +7,7 @@ featured: false
 toc: false
 usePageBundles: true
 featureImage: apple-touch-icon.png
-thumbnail: apple-touch-icon.png
+thumbnail: thumbnail.png
 shareImage: logo.png
 codeMaxLines: 10
 codeLineNumbers: false
@@ -48,21 +48,56 @@ So, I thought I was fairly safe, but then the breach mails kept coming in, and t
 I finally decided to do the same as many of my work-peers have already done, I took the leap to HUGO
 
 ###### HUGO is Cool
-Hugo says theyre the world’s fastest framework for building websites, and the most popular open-source static site generator. Not that I knew of any others when I started, but I'd say that's pretty much correct. I now know 4 people using hugo, and they all seem fine with it.  
+Hugo says they're _"the world’s fastest framework for building websites, and the most popular open-source static site generator."_ Not that I knew of any other generator when I started, but I'd say that's pretty much correct. I now know 4 people using hugo, and they all seem fine with it.  
 
-https://gohugo.io/ says _"With its amazing speed and flexibility, Hugo makes building websites fun again."_
-I will admit that it's challenging, but fun. If you're not a technical guy, I'd say you'd be using some time to get up to speed, at least if you want to modify themes, templates, css, and such. It's not as easy and userfriendly as wordpress. Some people, including me, might argue that that is also the strength. Well. at least the security is restored. 
+[GOHUGO](https://gohugo.io/) says _"With its amazing speed and flexibility, Hugo makes building websites fun again."_
+I will admit that it's challenging, but fun. If you're not a technical guy, I'd say you'd be using some time to get up to speed, at least if you want to modify themes, templates, css, and such. It's not as easy and userfriendly as wordpress. Some people, including me, might argue that that is also the strength. Well. at least the security is restored 100%. 
 
 Publishing to github from my local PC, then utilizing NETLIFY: https://www.netlify.com/ to publish automatically from github is just extremely nice and veru automatic and user friendly. 
 
 ###### Local Scripts
 I just had to have a couple of local CMD scripts. One that generates blogs, and one that publishes the blogs to Github. I'm just hosting the local stuff in dropbox, so I can access everything directly from my PC without cloning the github stuff all the time. So just a one-way push there :-) 
-I can see that Markdown is something I need to get better at. I'll probably do it all in Visual Studio Code. I think it'll be easy. Easier thatn notepad.exe  that this is written in... LOL :-) :-) :-) 
+I can see that Markdown is something I need to get better at. I'll probably do it all in Visual Studio Code. I think it'll be easy. Easier than notepad.exe  that this is written in... LOL :-) :-) :-) 
+
+**blog_post.cmd**
+`
+for /F "tokens=6" %%d in ('net time \\%COMPUTERNAME%^|findstr /I /C:"%COMPUTERNAME%"') do set today=%%d
+if (%today:~1,1%)==(/) set today=0%today%
+if (%today:~4,1%)==(/) set today=%today:~0,3%0%today:~3,6%
+set day=%today:~0,2%
+set month=%today:~3,2%
+set year=%today:~8,2%
+set /p input=Enter a short Title of your New Blog post: 
+set Input=%Input% [%today%].md
+:: echo Blog: "%Input%"
+:: echo running: "hugo new "post\20%year%-%month%-%day%\%input%""
+echo # CREATING A NEW BLOG POST
+hugo new "post\20%year%-%month%-%day%\%input%"
+echo # COPYING IMAGES
+xcopy "..\..\IMAGES\*.png" "content\post\20%year%-%month%-%day%" /S /C /D /-Y 
+echo # EDITING THE NEW BLOG POST
+MOVE ".\content\post\20%year%-%month%-%day%\%input%" ".\content\post\20%year%-%month%-%day%\index.md"
+"C:\Program Files\Notepad++\notepad++.exe" ".\content\post\20%year%-%month%-%day%\index.md"
+`
+**git_me_up.cmd**
+`
+git add *
+RMDIR /S /Q public
+MKDIR public
+hugo 
+del /F /S /Q ".git\worktrees\public"
+echo %DATE% %TIME% > date-time_last_updated.txt
+cd public
+git add --all 
+git add *
+git commit -m "Blog Update publish: %DATE% %TIME% - bgronas" 
+git push --all
+`
 
 
 Until Next time....
 
-*B*
+>B
 
 
 
