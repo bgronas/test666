@@ -61,39 +61,33 @@ I can see that Markdown is something I need to get better at. I'll probably do i
 
 **blog_post.cmd**
 `
-for /F "tokens=6" %%d in ('net time \\%COMPUTERNAME%^|findstr /I /C:"%COMPUTERNAME%"') do set today=%%d
-if (%today:~1,1%)==(/) set today=0%today%
-if (%today:~4,1%)==(/) set today=%today:~0,3%0%today:~3,6%
-set day=%today:~0,2%
-set month=%today:~3,2%
-set year=%today:~8,2%
-set /p input=Enter a short Title of your New Blog post: 
-set Input=%Input% [%today%].md
-:: echo Blog: "%Input%"
-:: echo running: "hugo new "post\20%year%-%month%-%day%\%input%""
-echo # CREATING A NEW BLOG POST
-hugo new "post\20%year%-%month%-%day%\%input%"
-echo # COPYING IMAGES
-xcopy "..\..\IMAGES\*.png" "content\post\20%year%-%month%-%day%" /S /C /D /-Y 
-echo # EDITING THE NEW BLOG POST
-MOVE ".\content\post\20%year%-%month%-%day%\%input%" ".\content\post\20%year%-%month%-%day%\index.md"
-"C:\Program Files\Notepad++\notepad++.exe" ".\content\post\20%year%-%month%-%day%\index.md"
+for /F "tokens=6" %%d in ('net time \\%COMPUTERNAME%^|findstr /I /C:"%COMPUTERNAME%"') do set today=%%d<br>
+if (%today:~1,1%)==(/) set today=0%today%<br>
+if (%today:~4,1%)==(/) set today=%today:~0,3%0%today:~3,6%<br>
+set day=%today:~0,2%<br>
+set month=%today:~3,2%<br>
+set year=%today:~8,2%<br>
+set /p input=Enter a short Title of your New Blog post: <br>
+set Input=%Input% [%today%].md<br>
+hugo new "post\20%year%-%month%-%day%\%input%"<br>
+xcopy "..\..\IMAGES\*.png" "content\post\20%year%-%month%-%day%" /S /C /D /-Y <br>
+MOVE ".\content\post\20%year%-%month%-%day%\%input%" ".\content\post\20%year%-%month%-%day%\index.md"<br>
+"C:\Program Files\Notepad++\notepad++.exe" ".\content\post\20%year%-%month%-%day%\index.md"<br>
 `
 **git_me_up.cmd**
 `
-git add *
-RMDIR /S /Q public
-MKDIR public
-hugo 
-del /F /S /Q ".git\worktrees\public"
-echo %DATE% %TIME% > date-time_last_updated.txt
-cd public
-git add --all 
-git add *
-git commit -m "Blog Update publish: %DATE% %TIME% - bgronas" 
-git push --all
+git add *<br>
+RMDIR /S /Q public<br>
+MKDIR public<br>
+hugo <br>
+del /F /S /Q ".git\worktrees\public"<br>
+echo %DATE% %TIME% > date-time_last_updated.txt<br>
+cd public<br>
+git add --all <br>
+git add *<br>
+git commit -m "Blog Update publish: %DATE% %TIME% - bgronas" <br>
+git push --all<br>
 `
-
 
 Until Next time....
 
