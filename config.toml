@@ -17,7 +17,7 @@ codeMaxLines = 12
 codeLineNumbers = false
 mainSections = ["post", "blog"]
 # centerLogo = false
-logo = "apple-touch-icon.png"
+logo = "logo.png"
 iconsDir = "icons/"
 mobileNavigation = "left"
 figurePositionShow = true
@@ -38,6 +38,6 @@ since = 2021
 # rss_summary
 # rss_summary_read_more_link
 showRelatedInArticle = true
-showRelatedInSidebar = false 
-footerLogo = "apple-touch-icon.png"
+showRelatedInSidebar = true 
+footerLogo = "logo.png"
 draft = true

@@ -2,18 +2,18 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>vROps on Bengt&#39;s Blog</title>
-    <link>/tags/vrops/</link>
+    <link>https://blog.bengt.no/tags/vrops/</link>
     <description>Recent content in vROps on Bengt&#39;s Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>cpy</copyright>
-    <lastBuildDate>Tue, 11 Jan 2022 01:29:03 +0100</lastBuildDate><atom:link href="/tags/vrops/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Tue, 11 Jan 2022 01:29:03 +0100</lastBuildDate><atom:link href="https://blog.bengt.no/tags/vrops/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Mixing VRealize Operations Licenses</title>
-      <link>/post/2022-01-11/</link>
+      <link>https://blog.bengt.no/post/2022-01-11/</link>
       <pubDate>Tue, 11 Jan 2022 01:29:03 +0100</pubDate>
       
-      <guid>/post/2022-01-11/</guid>
+      <guid>https://blog.bengt.no/post/2022-01-11/</guid>
       <description>
         
           

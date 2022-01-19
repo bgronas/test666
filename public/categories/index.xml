@@ -2,10 +2,10 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Categories on Bengt&#39;s Blog</title>
-    <link>/categories/</link>
+    <link>https://blog.bengt.no/categories/</link>
     <description>Recent content in Categories on Bengt&#39;s Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <copyright>cpy</copyright><atom:link href="/categories/index.xml" rel="self" type="application/rss+xml" />
+    <copyright>cpy</copyright><atom:link href="https://blog.bengt.no/categories/index.xml" rel="self" type="application/rss+xml" />
   </channel>
 </rss>
