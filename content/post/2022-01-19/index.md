@@ -6,8 +6,8 @@ description: I just changed from Wordpress to HUGO static Website.
 featured: false
 toc: false
 usePageBundles: true
-featureImage: apple-touch-icon.png
-thumbnail: thumbnail.png
+featureImage: hugo-logo.png
+thumbnail: hugo-logo-small.png
 shareImage: logo.png
 codeMaxLines: 10
 codeLineNumbers: false

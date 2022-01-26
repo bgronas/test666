@@ -6,10 +6,10 @@ featured: false # Sets if post is a featured post, making appear on the home pag
 toc: false # Controls if a table of contents should be generated for first-level links automatically.
 # menu: main
 usePageBundles: true
-featureImage: "vrealize_Operations.png" # Sets featured image on blog post.
+featureImage: "vrops.jpg" # Sets featured image on blog post.
 # featureImageAlt: 'just me' # Alternative text for featured image.
 # featureImageCap: 'This is the featured image.' # Caption (optional).
-thumbnail: "vrealize_Operations.png" # Sets thumbnail image appearing inside card on homepage.
+thumbnail: "vRealize-Operations-Logo-1024x618.png" # Sets thumbnail image appearing inside card on homepage.
 shareImage: "icon.png" # Designate a separate image for social media sharing.
 codeMaxLines: 10 # Override global value for how many lines within a code block before auto-collapsing.
 codeLineNumbers: false # Override global value for showing of line numbers within code block.
