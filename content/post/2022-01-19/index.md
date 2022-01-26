@@ -60,7 +60,7 @@ I just had to have a couple of local CMD scripts. One that generates blogs, and 
 I can see that Markdown is something I need to get better at. I'll probably do it all in Visual Studio Code. I think it'll be easy. Easier than notepad.exe  that this is written in... LOL :-) :-) :-) 
 
 **blog_post.cmd**
-`
+```
 for /F "tokens=6" %%d in ('net time \\%COMPUTERNAME%^|findstr /I /C:"%COMPUTERNAME%"') do set today=%%d<br>
 if (%today:~1,1%)==(/) set today=0%today%<br>
 if (%today:~4,1%)==(/) set today=%today:~0,3%0%today:~3,6%<br>
@@ -73,9 +73,9 @@ hugo new "post\20%year%-%month%-%day%\%input%"<br>
 xcopy "..\..\IMAGES\*.png" "content\post\20%year%-%month%-%day%" /S /C /D /-Y <br>
 MOVE ".\content\post\20%year%-%month%-%day%\%input%" ".\content\post\20%year%-%month%-%day%\index.md"<br>
 "C:\Program Files\Notepad++\notepad++.exe" ".\content\post\20%year%-%month%-%day%\index.md"<br>
-`
+```
 **git_me_up.cmd**
-`
+```
 git add *<br>
 RMDIR /S /Q public<br>
 MKDIR public<br>
@@ -87,7 +87,7 @@ git add --all <br>
 git add *<br>
 git commit -m "Blog Update publish: %DATE% %TIME% - bgronas" <br>
 git push --all<br>
-`
+```
 
 Until Next time....
 

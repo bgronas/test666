@@ -187,11 +187,32 @@ I will admit that it's challenging, but fun. If you're not a technical guy, I'd 
 <h6 id="local-scripts">Local Scripts</h6>
 <p>I just had to have a couple of local CMD scripts. One that generates blogs, and one that publishes the blogs to Github. I'm just hosting the local stuff in dropbox, so I can access everything directly from my PC without cloning the github stuff all the time. So just a one-way push there :-) 
 I can see that Markdown is something I need to get better at. I'll probably do it all in Visual Studio Code. I think it'll be easy. Easier than notepad.exe  that this is written in... LOL :-) :-) :-)</p>
-<p><strong>blog_post.cmd</strong>
-<code> for /F &quot;tokens=6&quot; %%d in ('net time \\%COMPUTERNAME%^|findstr /I /C:&quot;%COMPUTERNAME%&quot;') do set today=%%d&lt;br&gt; if (%today:~1,1%)==(/) set today=0%today%&lt;br&gt; if (%today:~4,1%)==(/) set today=%today:~0,3%0%today:~3,6%&lt;br&gt; set day=%today:~0,2%&lt;br&gt; set month=%today:~3,2%&lt;br&gt; set year=%today:~8,2%&lt;br&gt; set /p input=Enter a short Title of your New Blog post: &lt;br&gt; set Input=%Input% [%today%].md&lt;br&gt; hugo new &quot;post\20%year%-%month%-%day%\%input%&quot;&lt;br&gt; xcopy &quot;..\..\IMAGES\*.png&quot; &quot;content\post\20%year%-%month%-%day%&quot; /S /C /D /-Y &lt;br&gt; MOVE &quot;.\content\post\20%year%-%month%-%day%\%input%&quot; &quot;.\content\post\20%year%-%month%-%day%\index.md&quot;&lt;br&gt; &quot;C:\Program Files\Notepad++\notepad++.exe&quot; &quot;.\content\post\20%year%-%month%-%day%\index.md&quot;&lt;br&gt; </code>
-<strong>git_me_up.cmd</strong>
-<code> git add *&lt;br&gt; RMDIR /S /Q public&lt;br&gt; MKDIR public&lt;br&gt; hugo &lt;br&gt; del /F /S /Q &quot;.git\worktrees\public&quot;&lt;br&gt; echo %DATE% %TIME% &gt; date-time_last_updated.txt&lt;br&gt; cd public&lt;br&gt; git add --all &lt;br&gt; git add *&lt;br&gt; git commit -m &quot;Blog Update publish: %DATE% %TIME% - bgronas&quot; &lt;br&gt; git push --all&lt;br&gt; </code></p>
-<p>Until Next time....</p>
+<p><strong>blog_post.cmd</strong></p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="ln"> 1</span>for /F &#34;tokens=6&#34; %%d in (&#39;net time \\%COMPUTERNAME%^|findstr /I /C:&#34;%COMPUTERNAME%&#34;&#39;) do set today=%%d&lt;br&gt;
+<span class="ln"> 2</span>if (%today:~1,1%)==(/) set today=0%today%&lt;br&gt;
+<span class="ln"> 3</span>if (%today:~4,1%)==(/) set today=%today:~0,3%0%today:~3,6%&lt;br&gt;
+<span class="ln"> 4</span>set day=%today:~0,2%&lt;br&gt;
+<span class="ln"> 5</span>set month=%today:~3,2%&lt;br&gt;
+<span class="ln"> 6</span>set year=%today:~8,2%&lt;br&gt;
+<span class="ln"> 7</span>set /p input=Enter a short Title of your New Blog post: &lt;br&gt;
+<span class="ln"> 8</span>set Input=%Input% [%today%].md&lt;br&gt;
+<span class="ln"> 9</span>hugo new &#34;post\20%year%-%month%-%day%\%input%&#34;&lt;br&gt;
+<span class="ln">10</span>xcopy &#34;..\..\IMAGES\*.png&#34; &#34;content\post\20%year%-%month%-%day%&#34; /S /C /D /-Y &lt;br&gt;
+<span class="ln">11</span>MOVE &#34;.\content\post\20%year%-%month%-%day%\%input%&#34; &#34;.\content\post\20%year%-%month%-%day%\index.md&#34;&lt;br&gt;
+<span class="ln">12</span>&#34;C:\Program Files\Notepad++\notepad++.exe&#34; &#34;.\content\post\20%year%-%month%-%day%\index.md&#34;&lt;br&gt;
+</code></pre></div><p><strong>git_me_up.cmd</strong></p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="ln"> 1</span>git add *&lt;br&gt;
+<span class="ln"> 2</span>RMDIR /S /Q public&lt;br&gt;
+<span class="ln"> 3</span>MKDIR public&lt;br&gt;
+<span class="ln"> 4</span>hugo &lt;br&gt;
+<span class="ln"> 5</span>del /F /S /Q &#34;.git\worktrees\public&#34;&lt;br&gt;
+<span class="ln"> 6</span>echo %DATE% %TIME% &gt; date-time_last_updated.txt&lt;br&gt;
+<span class="ln"> 7</span>cd public&lt;br&gt;
+<span class="ln"> 8</span>git add --all &lt;br&gt;
+<span class="ln"> 9</span>git add *&lt;br&gt;
+<span class="ln">10</span>git commit -m &#34;Blog Update publish: %DATE% %TIME% - bgronas&#34; &lt;br&gt;
+<span class="ln">11</span>git push --all&lt;br&gt;
+</code></pre></div><p>Until Next time....</p>
 <blockquote>
 <p>B</p>
 </blockquote>
