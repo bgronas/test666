@@ -11,7 +11,8 @@ toc: false # Controls if a table of contents should be generated for first-level
 usePageBundles: true 
 
 # Set to true to group assets like images in the same folder as this post.
-featureImage: "thumbnail.png" # Sets featured image on blog post.
+# featureImage: "thumbnail.png" # Sets featured image on blog post.
+featureImage: "line.jpg" # Sets featured image on blog post.
 # featureImageAlt: 'Description of image' # Alternative text for featured image.
 # featureImageCap: 'This is the featured image.' # Caption (optional).
 

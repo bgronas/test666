@@ -3,10 +3,28 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
     <loc>/</loc>
-    <lastmod>2022-03-08T11:25:38+00:00</lastmod>
+    <lastmod>2022-04-29T14:54:50+02:00</lastmod>
   </url><url>
     <loc>/categories/</loc>
-    <lastmod>2022-03-08T11:25:38+00:00</lastmod>
+    <lastmod>2022-04-29T14:54:50+02:00</lastmod>
+  </url><url>
+    <loc>/tags/operations/</loc>
+    <lastmod>2022-04-29T14:54:50+02:00</lastmod>
+  </url><url>
+    <loc>/post/</loc>
+    <lastmod>2022-04-29T14:54:50+02:00</lastmod>
+  </url><url>
+    <loc>/tags/</loc>
+    <lastmod>2022-04-29T14:54:50+02:00</lastmod>
+  </url><url>
+    <loc>/categories/vmware/</loc>
+    <lastmod>2022-04-29T14:54:50+02:00</lastmod>
+  </url><url>
+    <loc>/tags/vrealize/</loc>
+    <lastmod>2022-04-29T14:54:50+02:00</lastmod>
+  </url><url>
+    <loc>/post/2022-04-29/</loc>
+    <lastmod>2022-04-29T14:54:50+02:00</lastmod>
   </url><url>
     <loc>/tags/frigate/</loc>
     <lastmod>2022-03-08T11:25:38+00:00</lastmod>
@@ -23,12 +41,6 @@
     <loc>/tags/nvr/</loc>
     <lastmod>2022-03-08T11:25:38+00:00</lastmod>
   </url><url>
-    <loc>/post/</loc>
-    <lastmod>2022-03-08T11:25:38+00:00</lastmod>
-  </url><url>
-    <loc>/tags/</loc>
-    <lastmod>2022-03-08T11:25:38+00:00</lastmod>
-  </url><url>
     <loc>/tags/hugo/</loc>
     <lastmod>2022-01-19T15:55:16+00:00</lastmod>
   </url><url>
@@ -42,9 +54,6 @@
     <lastmod>2022-01-12T00:00:00+00:00</lastmod>
   </url><url>
     <loc>/post/2022-01-11/</loc>
-    <lastmod>2022-01-11T01:29:03+01:00</lastmod>
-  </url><url>
-    <loc>/tags/vrealize/</loc>
     <lastmod>2022-01-11T01:29:03+01:00</lastmod>
   </url><url>
     <loc>/tags/vrops/</loc>

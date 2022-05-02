@@ -31,8 +31,8 @@
     
     
     <link rel="preload" href="/css/styles.01869c76e4757810d94ecbdccadba853d9d01d9416dfeb113df02e1479ff8b36e284e8bfeb3e8f353f2fdcdcbbdfcf27e558dbda96eb6341bfc304d55cd9e986.css" integrity = "sha512-AYacduR1eBDZTsvcytuoU9nQHZQW3&#43;sRPfAuFHn/izbihOi/6z6PNT8v3Ny7388n5Vjb2pbrY0G/wwTVXNnphg==" as="style" crossorigin="anonymous">
-    <link rel="preload" href="/js/bundle.min.061d04727b51b0a8fafe2f15b9370a961f33306e7af52abd00d69c906f5d825f1599306159d7756d7d2b4f359767a170625ae541d1f37d05c1daa4d5c7feec25.js" as="script" integrity=
-    "sha512-Bh0EcntRsKj6/i8VuTcKlh8zMG569Sq9ANackG9dgl8VmTBhWdd1bX0rTzWXZ6FwYlrlQdHzfQXB2qTVx/7sJQ==" crossorigin="anonymous">
+    <link rel="preload" href="/js/bundle.min.afecb51737d153c75aaeb1ed88d294245a068af6424f22f6f43a465791a1acd897586c8b9f97ad996d9046417cb62a3069b2c70964a2fe30bf6d04e02b6dadb3.js" as="script" integrity=
+    "sha512-r&#43;y1FzfRU8darrHtiNKUJFoGivZCTyL29DpGV5GhrNiXWGyLn5etmW2QRkF8tiowabLHCWSi/jC/bQTgK22tsw==" crossorigin="anonymous">
 
     
     <link rel="stylesheet" type="text/css" href="/css/styles.01869c76e4757810d94ecbdccadba853d9d01d9416dfeb113df02e1479ff8b36e284e8bfeb3e8f353f2fdcdcbbdfcf27e558dbda96eb6341bfc304d55cd9e986.css" integrity="sha512-AYacduR1eBDZTsvcytuoU9nQHZQW3&#43;sRPfAuFHn/izbihOi/6z6PNT8v3Ny7388n5Vjb2pbrY0G/wwTVXNnphg==" crossorigin="anonymous">
@@ -343,16 +343,16 @@ Frigate is an open source NVR, a <strong>N</strong>etwork <strong>V</strong>ideo
 <h5 id="the-mqtt"><strong>The MQTT</strong></h5>
 <p>I just installed MQTT Server (The Broker) on Home Assistant using the &quot;Mosquitto broker&quot;. I use it for the Home Assistant add-on 'Zigbee2mqtt' (because zha is just shit) and for Tasmota devices, such as Sonoff Basic, and more. Well. Comfigure it with a admin, password, and default port, and youl'll be fine. Go here: <a href="https://github.com/home-assistant/addons/blob/master/mosquitto/DOCS.md">https://github.com/home-assistant/addons/blob/master/mosquitto/DOCS.md</a></p>
 <p>Here's my own Home assistant MQTT configuration. You can find it here:  <code>&quot;Configuration&gt;Add-ons, Backups &amp; Supervisor&gt;Mosquitto broker&gt;Configuration&gt;&quot;Mosquitto broker Optons&quot;</code></p>
-<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="ln">1</span>certfile: fullchain.pem
-<span class="ln">2</span>customize:
-<span class="ln">3</span>  active: false
-<span class="ln">4</span>  folder: mosquitto
-<span class="ln">5</span>keyfile: privkey.pem
-<span class="ln">6</span>logins:
-<span class="ln">7</span>  - username: mqtt 
-<span class="ln">8</span>    password: yourPassword
-<span class="ln">9</span>require_certificate: false
-</code></pre></div><h5 id="create-these-directories"><strong>Create these directories</strong></h5>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="ln">1</span><span class="cl">certfile: fullchain.pem
+</span></span><span class="line"><span class="ln">2</span><span class="cl">customize:
+</span></span><span class="line"><span class="ln">3</span><span class="cl">  active: false
+</span></span><span class="line"><span class="ln">4</span><span class="cl">  folder: mosquitto
+</span></span><span class="line"><span class="ln">5</span><span class="cl">keyfile: privkey.pem
+</span></span><span class="line"><span class="ln">6</span><span class="cl">logins:
+</span></span><span class="line"><span class="ln">7</span><span class="cl">  - username: mqtt 
+</span></span><span class="line"><span class="ln">8</span><span class="cl">    password: yourPassword
+</span></span><span class="line"><span class="ln">9</span><span class="cl">require_certificate: false
+</span></span></code></pre></div><h5 id="create-these-directories"><strong>Create these directories</strong></h5>
 <p>Putty yourself onto your frigate server and mkdir these:</p>
 <ul>
 <li>/frigate</li>
@@ -370,143 +370,142 @@ Frigate is an open source NVR, a <strong>N</strong>etwork <strong>V</strong>ideo
 <p>Running docker compose with the following Docker compose file, is what stands up a container, and an app, and that app is based on an docker image you specify in the docker compose file. In the volumes: section you can see real life ubuntu paths mapped the paths that will surface magically within the docker conatiner. this means the file <code>/frigate/config/config.yml </code> maps to the frigate app as <code>/config/config.yml </code>and it will be read-only.</p>
 <p>Run <code>docker-compose up</code> and <code>docker-compose down </code>in your <code>/frigate/config</code> folder while you keep editing and troubleshooting your <code>/frigate/config/config.yml</code> file
 When you're done, take it down, and then use the -d switch to run it as a daemon:</p>
-<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="ln">1</span>docker-compose up -d
-</code></pre></div><h5 id="my-docker-compose-file"><strong>My Docker Compose file</strong></h5>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="ln">1</span><span class="cl">docker-compose up -d
+</span></span></code></pre></div><h5 id="my-docker-compose-file"><strong>My Docker Compose file</strong></h5>
 <p>I'll admit it, I'm not even a rookie when it comes to docker containers. I'd say I'm a total illiterate and a dumb fuck. Even so, with a little explanations and a <strong>lot</strong> of help from my friends I managed to get my very first Docker Compose file up and running. This file was <code>/frigate/docker-compose.yml</code></p>
 <p>Not very far from the practical example mentioned on the Frigate installation page. Here's what I ended up with:</p>
-<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="ln"> 1</span>version: &#34;3.9&#34;
-<span class="ln"> 2</span>services:
-<span class="ln"> 3</span>  frigate:
-<span class="ln"> 4</span>    container_name: frigate
-<span class="ln"> 5</span>    image: blakeblackshear/frigate:stable-amd64
-<span class="ln"> 6</span>    restart: always
-<span class="ln"> 7</span>    devices:
-<span class="ln"> 8</span>      - /dev/apex_0:/dev/apex_0
-<span class="ln"> 9</span>    volumes:
-<span class="ln">10</span>      - /frigate/config/config.yml:/config/config.yml:ro
-<span class="ln">11</span>      - /frigate/media:/media/frigate
-<span class="ln">12</span>      - type: tmpfs # Optional: 1GB of memory, reduces SSD/SD Card wear
-<span class="ln">13</span>        target: /tmp/cache
-<span class="ln">14</span>        tmpfs:
-<span class="ln">15</span>          size: 1000000000
-<span class="ln">16</span>    ports:
-<span class="ln">17</span>      - 5000:5000
-<span class="ln">18</span>      - 1935:1935
-<span class="ln">19</span>    environment:
-<span class="ln">20</span>      FRIGATE_RTSP_PASSWORD: &#34;yourPassword&#34;
-</code></pre></div><p>What made Coral tick? this entry:</p>
-<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="ln">1</span>    devices:
-<span class="ln">2</span>      - /dev/apex_0:/dev/apex_0
-</code></pre></div><h5 id="my-initial-frigate-config-file"><strong>My initial Frigate Config file</strong></h5>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="ln"> 1</span><span class="cl">version: &#34;3.9&#34;
+</span></span><span class="line"><span class="ln"> 2</span><span class="cl">services:
+</span></span><span class="line"><span class="ln"> 3</span><span class="cl">  frigate:
+</span></span><span class="line"><span class="ln"> 4</span><span class="cl">    container_name: frigate
+</span></span><span class="line"><span class="ln"> 5</span><span class="cl">    image: blakeblackshear/frigate:stable-amd64
+</span></span><span class="line"><span class="ln"> 6</span><span class="cl">    restart: always
+</span></span><span class="line"><span class="ln"> 7</span><span class="cl">    devices:
+</span></span><span class="line"><span class="ln"> 8</span><span class="cl">      - /dev/apex_0:/dev/apex_0
+</span></span><span class="line"><span class="ln"> 9</span><span class="cl">    volumes:
+</span></span><span class="line"><span class="ln">10</span><span class="cl">      - /frigate/config/config.yml:/config/config.yml:ro
+</span></span><span class="line"><span class="ln">11</span><span class="cl">      - /frigate/media:/media/frigate
+</span></span><span class="line"><span class="ln">12</span><span class="cl">      - type: tmpfs # Optional: 1GB of memory, reduces SSD/SD Card wear
+</span></span><span class="line"><span class="ln">13</span><span class="cl">        target: /tmp/cache
+</span></span><span class="line"><span class="ln">14</span><span class="cl">        tmpfs:
+</span></span><span class="line"><span class="ln">15</span><span class="cl">          size: 1000000000
+</span></span><span class="line"><span class="ln">16</span><span class="cl">    ports:
+</span></span><span class="line"><span class="ln">17</span><span class="cl">      - 5000:5000
+</span></span><span class="line"><span class="ln">18</span><span class="cl">      - 1935:1935
+</span></span><span class="line"><span class="ln">19</span><span class="cl">    environment:
+</span></span><span class="line"><span class="ln">20</span><span class="cl">      FRIGATE_RTSP_PASSWORD: &#34;yourPassword&#34;
+</span></span></code></pre></div><p>What made Coral tick? this entry:</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="ln">1</span><span class="cl">    devices:
+</span></span><span class="line"><span class="ln">2</span><span class="cl">      - /dev/apex_0:/dev/apex_0
+</span></span></code></pre></div><h5 id="my-initial-frigate-config-file"><strong>My initial Frigate Config file</strong></h5>
 <p>When I first started to test, I created the simplest file not far from the original shown in the installation document <a href="https://docs.frigate.video/installation/">https://docs.frigate.video/installation/</a> . This file went into <code>/frigate/config/config.yml</code></p>
-<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="ln"> 1</span>mqtt:
-<span class="ln"> 2</span>  host: 192.168.1.4
-<span class="ln"> 3</span>  user: mqtt
-<span class="ln"> 4</span>  password: yourPassword!
-<span class="ln"> 5</span>
-<span class="ln"> 6</span>cameras:
-<span class="ln"> 7</span>  back1:
-<span class="ln"> 8</span>    ffmpeg:
-<span class="ln"> 9</span>      inputs:
-<span class="ln">10</span>        - path: rtsp://youradmin:yourPassword!@192.168.1.93/Streaming/Channels/101
-<span class="ln">11</span>          roles:
-<span class="ln">12</span>            - rtmp
-</code></pre></div><blockquote>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="ln"> 1</span><span class="cl">mqtt:
+</span></span><span class="line"><span class="ln"> 2</span><span class="cl">  host: 192.168.1.4
+</span></span><span class="line"><span class="ln"> 3</span><span class="cl">  user: mqtt
+</span></span><span class="line"><span class="ln"> 4</span><span class="cl">  password: yourPassword!
+</span></span><span class="line"><span class="ln"> 5</span><span class="cl">
+</span></span><span class="line"><span class="ln"> 6</span><span class="cl">cameras:
+</span></span><span class="line"><span class="ln"> 7</span><span class="cl">  back1:
+</span></span><span class="line"><span class="ln"> 8</span><span class="cl">    ffmpeg:
+</span></span><span class="line"><span class="ln"> 9</span><span class="cl">      inputs:
+</span></span><span class="line"><span class="ln">10</span><span class="cl">        - path: rtsp://youradmin:yourPassword!@192.168.1.93/Streaming/Channels/101
+</span></span><span class="line"><span class="ln">11</span><span class="cl">          roles:
+</span></span><span class="line"><span class="ln">12</span><span class="cl">            - rtmp
+</span></span></code></pre></div><blockquote>
 <p>Note: This config does NOT engage Coral, so the CPU does the detection stuff.</p>
 </blockquote>
 <h5 id="my-current-frigate-config-file"><strong>My current Frigate Config file</strong></h5>
 <p>I have listed the config as an example on two different Hikvision cameras, and one Ubiquiti Unifi Protect camera. 
 For the full config file options, go here: <a href="https://docs.frigate.video/configuration/index/">https://docs.frigate.video/configuration/index/</a></p>
-<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="ln"> 1</span>mqtt:
-<span class="ln"> 2</span>  host: 10.10.1.4
-<span class="ln"> 3</span>  user: mqtt
-<span class="ln"> 4</span>  password: yourPassword
-<span class="ln"> 5</span>
-<span class="ln"> 6</span>detectors:
-<span class="ln"> 7</span>  coral:
-<span class="ln"> 8</span>    type: edgetpu
-<span class="ln"> 9</span>    device: pci:0
-<span class="ln">10</span>
-<span class="ln">11</span>birdseye:
-<span class="ln">12</span>  enabled: True
-<span class="ln">13</span>  width: 1280
-<span class="ln">14</span>  height: 720
-<span class="ln">15</span>  quality: 3
-<span class="ln">16</span>  mode: continuous
-<span class="ln">17</span>
-<span class="ln">18</span>timestamp_style:
-<span class="ln">19</span>  position: &#34;br&#34;
-<span class="ln">20</span>  format: &#34;%d.%m.%Y %H:%M:%S&#34;
-<span class="ln">21</span>  color:
-<span class="ln">22</span>    red: 255
-<span class="ln">23</span>    green: 255
-<span class="ln">24</span>    blue: 255
-<span class="ln">25</span>  thickness: 2
-<span class="ln">26</span>  effect: shadow
-<span class="ln">27</span>
-<span class="ln">28</span>objects:
-<span class="ln">29</span>  track:
-<span class="ln">30</span>    - person
-<span class="ln">31</span>    - bicycle
-<span class="ln">32</span>    - car
-<span class="ln">33</span>    - motorcycle
-<span class="ln">34</span>    - bird
-<span class="ln">35</span>    - cat
-<span class="ln">36</span>    - dog
-<span class="ln">37</span>
-<span class="ln">38</span>cameras:
-<span class="ln">39</span># This is a hikvison 
-<span class="ln">40</span>  westcam:
-<span class="ln">41</span>    ffmpeg:
-<span class="ln">42</span>      inputs:
-<span class="ln">43</span>        - path: rtsp://youradmin:yourPassword!@10.10.1.64:554/Streaming/Channels/102
-<span class="ln">44</span>          roles:
-<span class="ln">45</span>            - detect
-<span class="ln">46</span>            - record
-<span class="ln">47</span>            - rtmp
-<span class="ln">48</span>    detect:
-<span class="ln">49</span>      enabled: True
-<span class="ln">50</span>    record: # &lt;----- Enable recording
-<span class="ln">51</span>      enabled: True
-<span class="ln">52</span>    snapshots: # &lt;----- Enable snapshots
-<span class="ln">53</span>      enabled: True
-<span class="ln">54</span># This is a hikvison 
-<span class="ln">55</span>  backeast:
-<span class="ln">56</span>    ffmpeg:
-<span class="ln">57</span>      inputs:
-<span class="ln">58</span>        - path: rtsp://youradmin:yourPassword!@10.10.1.66/Streaming/Channels/101
-<span class="ln">59</span>          roles:
-<span class="ln">60</span>            - detect
-<span class="ln">61</span>            - rtmp
-<span class="ln">62</span>            - record
-<span class="ln">63</span>    detect:
-<span class="ln">64</span>      enabled: True
-<span class="ln">65</span>    record: # &lt;----- Enable recording
-<span class="ln">66</span>      enabled: True
-<span class="ln">67</span>    snapshots: # &lt;----- Enable snapshots
-<span class="ln">68</span>      enabled: True
-<span class="ln">69</span># This is a Ubiquiti Unifi Protect cam  
-<span class="ln">70</span>  trampoline:
-<span class="ln">71</span>    ffmpeg:
-<span class="ln">72</span>      inputs:
-<span class="ln">73</span>        - path: rtsps://10.10.0.1:7441/UnKVB41oCrvK4xLm?enableSrtp
-<span class="ln">74</span>          roles:
-<span class="ln">75</span>            - detect
-<span class="ln">76</span>            - record
-<span class="ln">77</span>            - rtmp
-<span class="ln">78</span>    detect:
-<span class="ln">79</span>      enabled: True
-<span class="ln">80</span>    record: # &lt;----- Enable recording
-<span class="ln">81</span>      enabled: True
-<span class="ln">82</span>    snapshots: # &lt;----- Enable snapshots
-<span class="ln">83</span>      enabled: True
-<span class="ln">84</span>
-</code></pre></div><p><strong>What made Coral tick?</strong> This entry:</p>
-<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="ln">1</span>detectors:
-<span class="ln">2</span>  coral:
-<span class="ln">3</span>    type: edgetpu
-<span class="ln">4</span>    device: pci:0
-</code></pre></div><h5 id="home-assistant-integration"><strong>Home Assistant integration</strong></h5>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="ln"> 1</span><span class="cl">mqtt:
+</span></span><span class="line"><span class="ln"> 2</span><span class="cl">  host: 10.10.1.4
+</span></span><span class="line"><span class="ln"> 3</span><span class="cl">  user: mqtt
+</span></span><span class="line"><span class="ln"> 4</span><span class="cl">  password: yourPassword
+</span></span><span class="line"><span class="ln"> 5</span><span class="cl">
+</span></span><span class="line"><span class="ln"> 6</span><span class="cl">detectors:
+</span></span><span class="line"><span class="ln"> 7</span><span class="cl">  coral:
+</span></span><span class="line"><span class="ln"> 8</span><span class="cl">    type: edgetpu
+</span></span><span class="line"><span class="ln"> 9</span><span class="cl">    device: pci:0
+</span></span><span class="line"><span class="ln">10</span><span class="cl">
+</span></span><span class="line"><span class="ln">11</span><span class="cl">birdseye:
+</span></span><span class="line"><span class="ln">12</span><span class="cl">  enabled: True
+</span></span><span class="line"><span class="ln">13</span><span class="cl">  width: 1280
+</span></span><span class="line"><span class="ln">14</span><span class="cl">  height: 720
+</span></span><span class="line"><span class="ln">15</span><span class="cl">  quality: 3
+</span></span><span class="line"><span class="ln">16</span><span class="cl">  mode: continuous
+</span></span><span class="line"><span class="ln">17</span><span class="cl">
+</span></span><span class="line"><span class="ln">18</span><span class="cl">timestamp_style:
+</span></span><span class="line"><span class="ln">19</span><span class="cl">  position: &#34;br&#34;
+</span></span><span class="line"><span class="ln">20</span><span class="cl">  format: &#34;%d.%m.%Y %H:%M:%S&#34;
+</span></span><span class="line"><span class="ln">21</span><span class="cl">  color:
+</span></span><span class="line"><span class="ln">22</span><span class="cl">    red: 255
+</span></span><span class="line"><span class="ln">23</span><span class="cl">    green: 255
+</span></span><span class="line"><span class="ln">24</span><span class="cl">    blue: 255
+</span></span><span class="line"><span class="ln">25</span><span class="cl">  thickness: 2
+</span></span><span class="line"><span class="ln">26</span><span class="cl">  effect: shadow
+</span></span><span class="line"><span class="ln">27</span><span class="cl">
+</span></span><span class="line"><span class="ln">28</span><span class="cl">objects:
+</span></span><span class="line"><span class="ln">29</span><span class="cl">  track:
+</span></span><span class="line"><span class="ln">30</span><span class="cl">    - person
+</span></span><span class="line"><span class="ln">31</span><span class="cl">    - bicycle
+</span></span><span class="line"><span class="ln">32</span><span class="cl">    - car
+</span></span><span class="line"><span class="ln">33</span><span class="cl">    - motorcycle
+</span></span><span class="line"><span class="ln">34</span><span class="cl">    - bird
+</span></span><span class="line"><span class="ln">35</span><span class="cl">    - cat
+</span></span><span class="line"><span class="ln">36</span><span class="cl">    - dog
+</span></span><span class="line"><span class="ln">37</span><span class="cl">
+</span></span><span class="line"><span class="ln">38</span><span class="cl">cameras:
+</span></span><span class="line"><span class="ln">39</span><span class="cl"># This is a hikvison 
+</span></span><span class="line"><span class="ln">40</span><span class="cl">  westcam:
+</span></span><span class="line"><span class="ln">41</span><span class="cl">    ffmpeg:
+</span></span><span class="line"><span class="ln">42</span><span class="cl">      inputs:
+</span></span><span class="line"><span class="ln">43</span><span class="cl">        - path: rtsp://youradmin:yourPassword!@10.10.1.64:554/Streaming/Channels/102
+</span></span><span class="line"><span class="ln">44</span><span class="cl">          roles:
+</span></span><span class="line"><span class="ln">45</span><span class="cl">            - detect
+</span></span><span class="line"><span class="ln">46</span><span class="cl">            - record
+</span></span><span class="line"><span class="ln">47</span><span class="cl">            - rtmp
+</span></span><span class="line"><span class="ln">48</span><span class="cl">    detect:
+</span></span><span class="line"><span class="ln">49</span><span class="cl">      enabled: True
+</span></span><span class="line"><span class="ln">50</span><span class="cl">    record: # &lt;----- Enable recording
+</span></span><span class="line"><span class="ln">51</span><span class="cl">      enabled: True
+</span></span><span class="line"><span class="ln">52</span><span class="cl">    snapshots: # &lt;----- Enable snapshots
+</span></span><span class="line"><span class="ln">53</span><span class="cl">      enabled: True
+</span></span><span class="line"><span class="ln">54</span><span class="cl"># This is a hikvison 
+</span></span><span class="line"><span class="ln">55</span><span class="cl">  backeast:
+</span></span><span class="line"><span class="ln">56</span><span class="cl">    ffmpeg:
+</span></span><span class="line"><span class="ln">57</span><span class="cl">      inputs:
+</span></span><span class="line"><span class="ln">58</span><span class="cl">        - path: rtsp://youradmin:yourPassword!@10.10.1.66/Streaming/Channels/101
+</span></span><span class="line"><span class="ln">59</span><span class="cl">          roles:
+</span></span><span class="line"><span class="ln">60</span><span class="cl">            - detect
+</span></span><span class="line"><span class="ln">61</span><span class="cl">            - rtmp
+</span></span><span class="line"><span class="ln">62</span><span class="cl">            - record
+</span></span><span class="line"><span class="ln">63</span><span class="cl">    detect:
+</span></span><span class="line"><span class="ln">64</span><span class="cl">      enabled: True
+</span></span><span class="line"><span class="ln">65</span><span class="cl">    record: # &lt;----- Enable recording
+</span></span><span class="line"><span class="ln">66</span><span class="cl">      enabled: True
+</span></span><span class="line"><span class="ln">67</span><span class="cl">    snapshots: # &lt;----- Enable snapshots
+</span></span><span class="line"><span class="ln">68</span><span class="cl">      enabled: True
+</span></span><span class="line"><span class="ln">69</span><span class="cl"># This is a Ubiquiti Unifi Protect cam  
+</span></span><span class="line"><span class="ln">70</span><span class="cl">  trampoline:
+</span></span><span class="line"><span class="ln">71</span><span class="cl">    ffmpeg:
+</span></span><span class="line"><span class="ln">72</span><span class="cl">      inputs:
+</span></span><span class="line"><span class="ln">73</span><span class="cl">        - path: rtsps://10.10.0.1:7441/UnKVB41oCrvK4xLm?enableSrtp
+</span></span><span class="line"><span class="ln">74</span><span class="cl">          roles:
+</span></span><span class="line"><span class="ln">75</span><span class="cl">            - detect
+</span></span><span class="line"><span class="ln">76</span><span class="cl">            - record
+</span></span><span class="line"><span class="ln">77</span><span class="cl">            - rtmp
+</span></span><span class="line"><span class="ln">78</span><span class="cl">    detect:
+</span></span><span class="line"><span class="ln">79</span><span class="cl">      enabled: True
+</span></span><span class="line"><span class="ln">80</span><span class="cl">    record: # &lt;----- Enable recording
+</span></span><span class="line"><span class="ln">81</span><span class="cl">      enabled: True
+</span></span><span class="line"><span class="ln">82</span><span class="cl">    snapshots: # &lt;----- Enable snapshots
+</span></span><span class="line"><span class="ln">83</span><span class="cl">      enabled: True
+</span></span></code></pre></div><p><strong>What made Coral tick?</strong> This entry:</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="ln">1</span><span class="cl">detectors:
+</span></span><span class="line"><span class="ln">2</span><span class="cl">  coral:
+</span></span><span class="line"><span class="ln">3</span><span class="cl">    type: edgetpu
+</span></span><span class="line"><span class="ln">4</span><span class="cl">    device: pci:0
+</span></span></code></pre></div><h5 id="home-assistant-integration"><strong>Home Assistant integration</strong></h5>
 <p>The Home Assistant Addon is not the same thing as the integration. Go here for a fine install doc: <a href="https://github.com/blakeblackshear/frigate-hass-integration">https://github.com/blakeblackshear/frigate-hass-integration</a>
 and Frigate's own: <a href="https://docs.frigate.video/integrations/home-assistant/">https://docs.frigate.video/integrations/home-assistant/</a></p>
 <ol>
@@ -516,9 +515,9 @@ and Frigate's own: <a href="https://docs.frigate.video/integrations/home-assista
 <li><strong>Lovelace Card:</strong> Home Assistant &gt; HACS &gt; Frontend &gt; &quot;Explore &amp; Add Integrations&quot; &gt; Frigate Card</li>
 <li>Add this to Home Assistant <code>configuration.yaml</code>:</li>
 </ol>
-<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="ln">1</span># Example configuration.yaml entry
-<span class="ln">2</span>media_source:
-</code></pre></div><p><em>I hope this makes your installation and config easy</em></p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="ln">1</span><span class="cl"># Example configuration.yaml entry
+</span></span><span class="line"><span class="ln">2</span><span class="cl">media_source:
+</span></span></code></pre></div><p><em>I hope this makes your installation and config easy</em></p>
 
     </div>
 
@@ -530,6 +529,9 @@ and Frigate's own: <a href="https://docs.frigate.video/integrations/home-assista
     
     <h2 class="mt-4">Recent Posts</h2>
     <ul class="flex-column">
+      <li>
+        <a href="/post/2022-04-29/" class="nav-link" title="vRealize Operations 8.6.3. [29.04.2022]">vRealize Operations 8.6.3. [29.04.2022]</a>
+      </li>
       <li>
         <a href="/post/year-blog-learning-hugo-19-01-2022/" class="nav-link" title="New Year, New Blog, Learning HUGO [19.01.2022]">New Year, New Blog, Learning HUGO [19.01.2022]</a>
       </li>
@@ -550,6 +552,11 @@ and Frigate's own: <a href="https://docs.frigate.video/integrations/home-assista
           <span class="button_tally">1</span>
         </a>
         
+        <a href='/categories/vmware/' class="post_tag button button_translucent" title="vmware">
+          VMWARE
+          <span class="button_tally">1</span>
+        </a>
+        
         <a href='/categories/work/' class="post_tag button button_translucent" title="work">
           WORK
           <span class="button_tally">1</span>
@@ -561,6 +568,11 @@ and Frigate's own: <a href="https://docs.frigate.video/integrations/home-assista
     <div>
       <h2 class="mt-4 taxonomy" id="tags-section">Tags</h2>
       <nav class="tags_nav">
+        <a href='/tags/vrealize/' class="post_tag button button_translucent" title="vrealize">
+          VREALIZE
+          <span class="button_tally">2</span>
+        </a>
+        
         <a href='/tags/frigate/' class="post_tag button button_translucent" title="frigate">
           FRIGATE
           <span class="button_tally">1</span>
@@ -581,8 +593,8 @@ and Frigate's own: <a href="https://docs.frigate.video/integrations/home-assista
           <span class="button_tally">1</span>
         </a>
         
-        <a href='/tags/vrealize/' class="post_tag button button_translucent" title="vrealize">
-          VREALIZE
+        <a href='/tags/operations/' class="post_tag button button_translucent" title="operations">
+          OPERATIONS
           <span class="button_tally">1</span>
         </a>
         
@@ -677,7 +689,7 @@ and Frigate's own: <a href="https://docs.frigate.video/integrations/home-assista
   </div>
 </footer>
 
-    <script type="text/javascript" src="/js/bundle.min.061d04727b51b0a8fafe2f15b9370a961f33306e7af52abd00d69c906f5d825f1599306159d7756d7d2b4f359767a170625ae541d1f37d05c1daa4d5c7feec25.js" integrity="sha512-Bh0EcntRsKj6/i8VuTcKlh8zMG569Sq9ANackG9dgl8VmTBhWdd1bX0rTzWXZ6FwYlrlQdHzfQXB2qTVx/7sJQ==" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="/js/bundle.min.afecb51737d153c75aaeb1ed88d294245a068af6424f22f6f43a465791a1acd897586c8b9f97ad996d9046417cb62a3069b2c70964a2fe30bf6d04e02b6dadb3.js" integrity="sha512-r&#43;y1FzfRU8darrHtiNKUJFoGivZCTyL29DpGV5GhrNiXWGyLn5etmW2QRkF8tiowabLHCWSi/jC/bQTgK22tsw==" crossorigin="anonymous"></script>
     
   </body>
 </html>

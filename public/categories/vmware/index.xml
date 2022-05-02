@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>VMware on Bengt&#39;s Blog</title>
+    <link>/categories/vmware/</link>
+    <description>Recent content in VMware on Bengt&#39;s Blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright>cpy</copyright>
+    <lastBuildDate>Fri, 29 Apr 2022 14:54:50 +0200</lastBuildDate><atom:link href="/categories/vmware/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>vRealize Operations 8.6.3. [29.04.2022]</title>
+      <link>/post/2022-04-29/</link>
+      <pubDate>Fri, 29 Apr 2022 14:54:50 +0200</pubDate>
+      
+      <guid>/post/2022-04-29/</guid>
+      <description>
+        
+          
+            Recently, VMware released new and improved vRealize versions. Let&#39;s have a look on vRealize Operations and the new v8.6.3 of the product.
+This release from 8.6.2 to 8.6.3. is a is a maintenance release which resolves a few important security and functionality issues identified in the product For more details, see KB 88081. There are 154 CVE&#39;s (Common Vulnerabilities and Exposures) solved and fixed. I&#39;d say it&#39;s quite a large update even if it feels minor.
+          
+          
+        
+      </description>
+    </item>
+    
+  </channel>
+</rss>

@@ -31,8 +31,8 @@
     
     
     <link rel="preload" href="/css/styles.01869c76e4757810d94ecbdccadba853d9d01d9416dfeb113df02e1479ff8b36e284e8bfeb3e8f353f2fdcdcbbdfcf27e558dbda96eb6341bfc304d55cd9e986.css" integrity = "sha512-AYacduR1eBDZTsvcytuoU9nQHZQW3&#43;sRPfAuFHn/izbihOi/6z6PNT8v3Ny7388n5Vjb2pbrY0G/wwTVXNnphg==" as="style" crossorigin="anonymous">
-    <link rel="preload" href="/js/bundle.min.061d04727b51b0a8fafe2f15b9370a961f33306e7af52abd00d69c906f5d825f1599306159d7756d7d2b4f359767a170625ae541d1f37d05c1daa4d5c7feec25.js" as="script" integrity=
-    "sha512-Bh0EcntRsKj6/i8VuTcKlh8zMG569Sq9ANackG9dgl8VmTBhWdd1bX0rTzWXZ6FwYlrlQdHzfQXB2qTVx/7sJQ==" crossorigin="anonymous">
+    <link rel="preload" href="/js/bundle.min.afecb51737d153c75aaeb1ed88d294245a068af6424f22f6f43a465791a1acd897586c8b9f97ad996d9046417cb62a3069b2c70964a2fe30bf6d04e02b6dadb3.js" as="script" integrity=
+    "sha512-r&#43;y1FzfRU8darrHtiNKUJFoGivZCTyL29DpGV5GhrNiXWGyLn5etmW2QRkF8tiowabLHCWSi/jC/bQTgK22tsw==" crossorigin="anonymous">
 
     
     <link rel="stylesheet" type="text/css" href="/css/styles.01869c76e4757810d94ecbdccadba853d9d01d9416dfeb113df02e1479ff8b36e284e8bfeb3e8f353f2fdcdcbbdfcf27e558dbda96eb6341bfc304d55cd9e986.css" integrity="sha512-AYacduR1eBDZTsvcytuoU9nQHZQW3&#43;sRPfAuFHn/izbihOi/6z6PNT8v3Ny7388n5Vjb2pbrY0G/wwTVXNnphg==" crossorigin="anonymous">
@@ -188,31 +188,31 @@ I will admit that it's challenging, but fun. If you're not a technical guy, I'd 
 <p>I just had to have a couple of local CMD scripts. One that generates blogs, and one that publishes the blogs to Github. I'm just hosting the local stuff in dropbox, so I can access everything directly from my PC without cloning the github stuff all the time. So just a one-way push there :-) 
 I can see that Markdown is something I need to get better at. I'll probably do it all in Visual Studio Code. I think it'll be easy. Easier than notepad.exe  that this is written in... LOL :-) :-) :-)</p>
 <p><strong>blog_post.cmd</strong></p>
-<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="ln"> 1</span>for /F &#34;tokens=6&#34; %%d in (&#39;net time \\%COMPUTERNAME%^|findstr /I /C:&#34;%COMPUTERNAME%&#34;&#39;) do set today=%%d&lt;br&gt;
-<span class="ln"> 2</span>if (%today:~1,1%)==(/) set today=0%today%&lt;br&gt;
-<span class="ln"> 3</span>if (%today:~4,1%)==(/) set today=%today:~0,3%0%today:~3,6%&lt;br&gt;
-<span class="ln"> 4</span>set day=%today:~0,2%&lt;br&gt;
-<span class="ln"> 5</span>set month=%today:~3,2%&lt;br&gt;
-<span class="ln"> 6</span>set year=%today:~8,2%&lt;br&gt;
-<span class="ln"> 7</span>set /p input=Enter a short Title of your New Blog post: &lt;br&gt;
-<span class="ln"> 8</span>set Input=%Input% [%today%].md&lt;br&gt;
-<span class="ln"> 9</span>hugo new &#34;post\20%year%-%month%-%day%\%input%&#34;&lt;br&gt;
-<span class="ln">10</span>xcopy &#34;..\..\IMAGES\*.png&#34; &#34;content\post\20%year%-%month%-%day%&#34; /S /C /D /-Y &lt;br&gt;
-<span class="ln">11</span>MOVE &#34;.\content\post\20%year%-%month%-%day%\%input%&#34; &#34;.\content\post\20%year%-%month%-%day%\index.md&#34;&lt;br&gt;
-<span class="ln">12</span>&#34;C:\Program Files\Notepad++\notepad++.exe&#34; &#34;.\content\post\20%year%-%month%-%day%\index.md&#34;&lt;br&gt;
-</code></pre></div><p><strong>git_me_up.cmd</strong></p>
-<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="ln"> 1</span>git add *&lt;br&gt;
-<span class="ln"> 2</span>RMDIR /S /Q public&lt;br&gt;
-<span class="ln"> 3</span>MKDIR public&lt;br&gt;
-<span class="ln"> 4</span>hugo &lt;br&gt;
-<span class="ln"> 5</span>del /F /S /Q &#34;.git\worktrees\public&#34;&lt;br&gt;
-<span class="ln"> 6</span>echo %DATE% %TIME% &gt; date-time_last_updated.txt&lt;br&gt;
-<span class="ln"> 7</span>cd public&lt;br&gt;
-<span class="ln"> 8</span>git add --all &lt;br&gt;
-<span class="ln"> 9</span>git add *&lt;br&gt;
-<span class="ln">10</span>git commit -m &#34;Blog Update publish: %DATE% %TIME% - bgronas&#34; &lt;br&gt;
-<span class="ln">11</span>git push --all&lt;br&gt;
-</code></pre></div><p>Until Next time....</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="ln"> 1</span><span class="cl">for /F &#34;tokens=6&#34; %%d in (&#39;net time \\%COMPUTERNAME%^|findstr /I /C:&#34;%COMPUTERNAME%&#34;&#39;) do set today=%%d&lt;br&gt;
+</span></span><span class="line"><span class="ln"> 2</span><span class="cl">if (%today:~1,1%)==(/) set today=0%today%&lt;br&gt;
+</span></span><span class="line"><span class="ln"> 3</span><span class="cl">if (%today:~4,1%)==(/) set today=%today:~0,3%0%today:~3,6%&lt;br&gt;
+</span></span><span class="line"><span class="ln"> 4</span><span class="cl">set day=%today:~0,2%&lt;br&gt;
+</span></span><span class="line"><span class="ln"> 5</span><span class="cl">set month=%today:~3,2%&lt;br&gt;
+</span></span><span class="line"><span class="ln"> 6</span><span class="cl">set year=%today:~8,2%&lt;br&gt;
+</span></span><span class="line"><span class="ln"> 7</span><span class="cl">set /p input=Enter a short Title of your New Blog post: &lt;br&gt;
+</span></span><span class="line"><span class="ln"> 8</span><span class="cl">set Input=%Input% [%today%].md&lt;br&gt;
+</span></span><span class="line"><span class="ln"> 9</span><span class="cl">hugo new &#34;post\20%year%-%month%-%day%\%input%&#34;&lt;br&gt;
+</span></span><span class="line"><span class="ln">10</span><span class="cl">xcopy &#34;..\..\IMAGES\*.png&#34; &#34;content\post\20%year%-%month%-%day%&#34; /S /C /D /-Y &lt;br&gt;
+</span></span><span class="line"><span class="ln">11</span><span class="cl">MOVE &#34;.\content\post\20%year%-%month%-%day%\%input%&#34; &#34;.\content\post\20%year%-%month%-%day%\index.md&#34;&lt;br&gt;
+</span></span><span class="line"><span class="ln">12</span><span class="cl">&#34;C:\Program Files\Notepad++\notepad++.exe&#34; &#34;.\content\post\20%year%-%month%-%day%\index.md&#34;&lt;br&gt;
+</span></span></code></pre></div><p><strong>git_me_up.cmd</strong></p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="ln"> 1</span><span class="cl">git add *&lt;br&gt;
+</span></span><span class="line"><span class="ln"> 2</span><span class="cl">RMDIR /S /Q public&lt;br&gt;
+</span></span><span class="line"><span class="ln"> 3</span><span class="cl">MKDIR public&lt;br&gt;
+</span></span><span class="line"><span class="ln"> 4</span><span class="cl">hugo &lt;br&gt;
+</span></span><span class="line"><span class="ln"> 5</span><span class="cl">del /F /S /Q &#34;.git\worktrees\public&#34;&lt;br&gt;
+</span></span><span class="line"><span class="ln"> 6</span><span class="cl">echo %DATE% %TIME% &gt; date-time_last_updated.txt&lt;br&gt;
+</span></span><span class="line"><span class="ln"> 7</span><span class="cl">cd public&lt;br&gt;
+</span></span><span class="line"><span class="ln"> 8</span><span class="cl">git add --all &lt;br&gt;
+</span></span><span class="line"><span class="ln"> 9</span><span class="cl">git add *&lt;br&gt;
+</span></span><span class="line"><span class="ln">10</span><span class="cl">git commit -m &#34;Blog Update publish: %DATE% %TIME% - bgronas&#34; &lt;br&gt;
+</span></span><span class="line"><span class="ln">11</span><span class="cl">git push --all&lt;br&gt;
+</span></span></code></pre></div><p>Until Next time....</p>
 <blockquote>
 <p>B</p>
 </blockquote>
@@ -227,6 +227,9 @@ I can see that Markdown is something I need to get better at. I'll probably do i
     
     <h2 class="mt-4">Recent Posts</h2>
     <ul class="flex-column">
+      <li>
+        <a href="/post/2022-04-29/" class="nav-link" title="vRealize Operations 8.6.3. [29.04.2022]">vRealize Operations 8.6.3. [29.04.2022]</a>
+      </li>
       <li>
         <a href="/post/2022-03-07/" class="nav-link" title="Frigate - I&#39;ve neither seen the boat nor the bird">Frigate - I&#39;ve neither seen the boat nor the bird</a>
       </li>
@@ -247,6 +250,11 @@ I can see that Markdown is something I need to get better at. I'll probably do i
           <span class="button_tally">1</span>
         </a>
         
+        <a href='/categories/vmware/' class="post_tag button button_translucent" title="vmware">
+          VMWARE
+          <span class="button_tally">1</span>
+        </a>
+        
         <a href='/categories/work/' class="post_tag button button_translucent" title="work">
           WORK
           <span class="button_tally">1</span>
@@ -258,6 +266,11 @@ I can see that Markdown is something I need to get better at. I'll probably do i
     <div>
       <h2 class="mt-4 taxonomy" id="tags-section">Tags</h2>
       <nav class="tags_nav">
+        <a href='/tags/vrealize/' class="post_tag button button_translucent" title="vrealize">
+          VREALIZE
+          <span class="button_tally">2</span>
+        </a>
+        
         <a href='/tags/frigate/' class="post_tag button button_translucent" title="frigate">
           FRIGATE
           <span class="button_tally">1</span>
@@ -278,8 +291,8 @@ I can see that Markdown is something I need to get better at. I'll probably do i
           <span class="button_tally">1</span>
         </a>
         
-        <a href='/tags/vrealize/' class="post_tag button button_translucent" title="vrealize">
-          VREALIZE
+        <a href='/tags/operations/' class="post_tag button button_translucent" title="operations">
+          OPERATIONS
           <span class="button_tally">1</span>
         </a>
         
@@ -374,7 +387,7 @@ I can see that Markdown is something I need to get better at. I'll probably do i
   </div>
 </footer>
 
-    <script type="text/javascript" src="/js/bundle.min.061d04727b51b0a8fafe2f15b9370a961f33306e7af52abd00d69c906f5d825f1599306159d7756d7d2b4f359767a170625ae541d1f37d05c1daa4d5c7feec25.js" integrity="sha512-Bh0EcntRsKj6/i8VuTcKlh8zMG569Sq9ANackG9dgl8VmTBhWdd1bX0rTzWXZ6FwYlrlQdHzfQXB2qTVx/7sJQ==" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="/js/bundle.min.afecb51737d153c75aaeb1ed88d294245a068af6424f22f6f43a465791a1acd897586c8b9f97ad996d9046417cb62a3069b2c70964a2fe30bf6d04e02b6dadb3.js" integrity="sha512-r&#43;y1FzfRU8darrHtiNKUJFoGivZCTyL29DpGV5GhrNiXWGyLn5etmW2QRkF8tiowabLHCWSi/jC/bQTgK22tsw==" crossorigin="anonymous"></script>
     
   </body>
 </html>
