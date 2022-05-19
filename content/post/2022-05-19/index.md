@@ -4,7 +4,7 @@ title: "VMware Explore, the New VMworld! [19.05.2022]" # Title of the blog post.
 date: 2022-05-19T10:43:52+02:00 # Date of post creation.
 description: "Article description." # Description used for search engine.
 featured: false # Sets if post is a featured post, making appear on the home page side bar.
-draft: true # Sets whether to render this page. Draft of true will not be rendered.
+draft: false # Sets whether to render this page. Draft of true will not be rendered.
 toc: false # Controls if a table of contents should be generated for first-level links automatically.
 
 # menu: main
