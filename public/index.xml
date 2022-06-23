@@ -7,7 +7,24 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>cpy</copyright>
-    <lastBuildDate>Thu, 19 May 2022 10:43:52 +0200</lastBuildDate><atom:link href="/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Thu, 23 Jun 2022 11:03:00 +0200</lastBuildDate><atom:link href="/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Root Password Expiration on VRealize Appliances [23.06.2022]</title>
+      <link>/post/2022-06-23/</link>
+      <pubDate>Thu, 23 Jun 2022 11:03:00 +0200</pubDate>
+      
+      <guid>/post/2022-06-23/</guid>
+      <description>
+        
+          
+            What&#39;s the problem? Normally a Virtual appliance (VA) in the vRealize Suite (VRS), will expire the root password you set under the installation in a year. Well, nothing dramatic about that. But, will you remember to change it next year? Maybe, if something told you in a GUI, mail or monitoring system that the password were going to expire.
+A monitoring dilemma When the VA root password is expired it will prompt you to change it when you SSH into it.
+          
+          
+        
+      </description>
+    </item>
+    
     <item>
       <title>VMware Explore, the New VMworld! [19.05.2022]</title>
       <link>/post/2022-05-19/</link>
