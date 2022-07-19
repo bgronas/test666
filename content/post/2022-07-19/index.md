@@ -39,9 +39,11 @@ comment: false # Disable comment if false.
 
 With me will be my CO-Host: Staff Technical Account Manager at VMware, **Shannon Fitzpatrick**
 
+#### Twitter
 <blockquote class="twitter-tweet"><p lang="en" dir="ltr">Become a power user of vRealize Log Insight and learn how to create, share and manage dashboards.💪<br>Sign-up for the Advanced Topics in VMware vRealize Log Insight Expert-led Workshop at <a href="https://twitter.com/hashtag/VMwareExplore?src=hash&amp;ref_src=twsrc%5Etfw">#VMwareExplore</a>!<br>➡️<a href="https://t.co/OnhUixNwYL">https://t.co/OnhUixNwYL</a>⬅️ <a href="https://t.co/8YdlVHu43I">pic.twitter.com/8YdlVHu43I</a></p>&mdash; VMware Hands-on Labs (@VMwareHOL) <a href="https://twitter.com/VMwareHOL/status/1549072662063771650?ref_src=twsrc%5Etfw">July 18, 2022</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
 
-
+#### Facebook
+<iframe src="https://www.facebook.com/plugins/post.php?href=https%3A%2F%2Fwww.facebook.com%2Fvmware.handsonlabs%2Fposts%2Fpfbid04T4B93KmUdevq49VuydMtuxT4ZJ4PYzCGbb3VWn4v3fg7ASopMeT6CkvRahFsFrel&show_text=true&width=500" width="500" height="428" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowfullscreen="true" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"></iframe>
 
 **If you want to take the full Lab in your own pace, you can find it here:** https://labs.hol.vmware.com/HOL/catalogs/lab/10138 
 
