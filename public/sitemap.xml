@@ -3,27 +3,39 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
     <loc>/</loc>
-    <lastmod>2022-06-23T11:03:00+02:00</lastmod>
+    <lastmod>2022-07-19T10:05:04+02:00</lastmod>
   </url><url>
-    <loc>/tags/appliances/</loc>
-    <lastmod>2022-06-23T11:03:00+02:00</lastmod>
+    <loc>/post/2022-07-19/</loc>
+    <lastmod>2022-07-19T10:05:04+02:00</lastmod>
   </url><url>
     <loc>/categories/</loc>
-    <lastmod>2022-06-23T11:03:00+02:00</lastmod>
+    <lastmod>2022-07-19T10:05:04+02:00</lastmod>
+  </url><url>
+    <loc>/tags/log-insight/</loc>
+    <lastmod>2022-07-19T10:05:04+02:00</lastmod>
   </url><url>
     <loc>/post/</loc>
+    <lastmod>2022-07-19T10:05:04+02:00</lastmod>
+  </url><url>
+    <loc>/tags/</loc>
+    <lastmod>2022-07-19T10:05:04+02:00</lastmod>
+  </url><url>
+    <loc>/categories/vmware/</loc>
+    <lastmod>2022-07-19T10:05:04+02:00</lastmod>
+  </url><url>
+    <loc>/tags/vmware-explore/</loc>
+    <lastmod>2022-07-19T10:05:04+02:00</lastmod>
+  </url><url>
+    <loc>/tags/vrealize/</loc>
+    <lastmod>2022-07-19T10:05:04+02:00</lastmod>
+  </url><url>
+    <loc>/tags/appliances/</loc>
     <lastmod>2022-06-23T11:03:00+02:00</lastmod>
   </url><url>
     <loc>/post/2022-06-23/</loc>
     <lastmod>2022-06-23T11:03:00+02:00</lastmod>
   </url><url>
-    <loc>/tags/</loc>
-    <lastmod>2022-06-23T11:03:00+02:00</lastmod>
-  </url><url>
     <loc>/categories/technology/</loc>
-    <lastmod>2022-06-23T11:03:00+02:00</lastmod>
-  </url><url>
-    <loc>/tags/vrealize/</loc>
     <lastmod>2022-06-23T11:03:00+02:00</lastmod>
   </url><url>
     <loc>/categories/events/</loc>
@@ -45,9 +57,6 @@
     <lastmod>2022-05-19T10:43:52+02:00</lastmod>
   </url><url>
     <loc>/tags/operations/</loc>
-    <lastmod>2022-04-29T14:54:50+02:00</lastmod>
-  </url><url>
-    <loc>/categories/vmware/</loc>
     <lastmod>2022-04-29T14:54:50+02:00</lastmod>
   </url><url>
     <loc>/post/2022-04-29/</loc>

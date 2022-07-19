@@ -7,7 +7,23 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>cpy</copyright>
-    <lastBuildDate>Thu, 23 Jun 2022 11:03:00 +0200</lastBuildDate><atom:link href="/tags/vrealize/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Tue, 19 Jul 2022 10:05:04 +0200</lastBuildDate><atom:link href="/tags/vrealize/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Become a Power User of VRealize Log Insight [19.07.2022]</title>
+      <link>/post/2022-07-19/</link>
+      <pubDate>Tue, 19 Jul 2022 10:05:04 +0200</pubDate>
+      
+      <guid>/post/2022-07-19/</guid>
+      <description>
+        
+          
+            For the fourth time I am a &#39;captain&#39; as a part of the VMware Hands-On Labs, and this year I will be on both VMware Explore arrangements in USA and EUROPE. While serving the Hands-on Labs environment, we will have Instructor Lead Workshops (ELW) where the participating audience will have headsets and listening to me while we go through one of the labs. One of the Labs I&#39;ve previously have written is the Advanced Topics in vRealize Log Insight (HOL-2201-11-CMP), and this particular Instructor Lead Workshops will be taken from one of the modules from that Lab.
+          
+          
+        
+      </description>
+    </item>
+    
     <item>
       <title>Root Password Expiration on VRealize Appliances [23.06.2022]</title>
       <link>/post/2022-06-23/</link>
