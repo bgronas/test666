@@ -166,10 +166,10 @@
 
 
     
-    <div class="post_body"><h1 id="how-to-set-up-python-on-pi">How-to set up Python on Pi</h1>
+    <div class="post_body"><h2 id="how-to-set-up-python-on-pi">How-to set up Python on Pi</h2>
 <p>The goal of this little article is to show how I installed Python on raspberry PI.  There are lot's of articles out there on the subject, but since I am a beginner, I am running through everything I find useful for  my self and as a later notice to myself. This saves med the time and hassle to find the recipe or how-to next time. Plus, I know what worked for me.</p>
 <h3 id="where-can-i-find-python">Where can I find Python?</h3>
-<p><a href="https://www.python.org/">https://www.python.org/</a> is a good place to start. The Python versions can be found here:  <a href="https://www.python.org/downloads">https://www.python.org/downloads</a>. The one I've found and selected for Linux (Raspberry Pi) is : <a href="https://www.python.org/ftp/python/3.10.8/Python-3.10.8.tgz">https://www.python.org/ftp/python/3.10.8/Python-3.10.8.tgz</a></p>
+<p><a href="https://www.python.org/">https://www.python.org/</a> is a good place to start. The Python versions can be found here:  <a href="https://www.python.org/downloads">https://www.python.org/downloads</a>.  The one I've found and selected for Linux (Raspberry Pi) is : <a href="https://www.python.org/ftp/python/3.10.8/Python-3.10.8.tgz">https://www.python.org/ftp/python/3.10.8/Python-3.10.8.tgz</a> take with you this one to the next steps.</p>
 <p>After you've logged in to your Raspberry Pi thing...</p>
 <h3 id="how-do-i-check-my-python-version">How do I check my Python version?</h3>
 <p><code>python --version</code> 
@@ -203,7 +203,7 @@
 <ul>
 <li>
 <p><code>Start</code> vscode and search for ssh in the extensions marketplace
-<img src="image-20221018161544402-1666102548329-5-1666102552737-7.png" alt="image-20221018161544402" style="zoom:50%;" /></p>
+<img src="image-20221018161544402-1666102548329-5-1666102552737-7.png" alt="" style="zoom:50%;" /></p>
 </li>
 <li>
 <p>In the left side of vscode click the SSH icon:
@@ -262,7 +262,7 @@
         
       
 
-      <img class="image_figure image_internal" src="/post/2022-10-18/image-20221018161757847-1666102683058-9.png" alt="image-20221018161757847" loading="lazy" decoding="async" width="52" height="55"  />
+      <img class="image_figure image_internal" src="/post/2022-10-18/image-20221018161757847-1666102683058-9.png" alt="" loading="lazy" decoding="async" width="52" height="55"  />
       
 
     </picture>
@@ -270,7 +270,7 @@
 </p>
 </li>
 <li>
-<p>Click the + icon, and enter &quot;ssh logon@serverIP and press enter&quot;: 
+<p>Click the + icon, and enter &quot;ssh logon@serverIP and press enter&quot;:
 
 
 
@@ -326,7 +326,7 @@
         
       
 
-      <img class="image_figure image_internal" src="/post/2022-10-18/image-20221018162209824-1666102932702-14.png" alt="image-20221018162209824" loading="lazy" decoding="async" width="790" height="70"  />
+      <img class="image_figure image_internal" src="/post/2022-10-18/image-20221018162209824-1666102932702-14.png" alt="" loading="lazy" decoding="async" width="790" height="70"  />
       
 
     </picture>
@@ -334,7 +334,7 @@
 </p>
 </li>
 <li>
-<p>Select your config file c:\users\admin.ssh\config: 
+<p>Select your config file c:\users\admin.ssh\config:
 
 
 
@@ -390,7 +390,7 @@
         
       
 
-      <img class="image_figure image_internal" src="/post/2022-10-18/image-20221018162322457-1666103005915-16.png" alt="image-20221018162322457" loading="lazy" decoding="async" width="430" height="148"  />
+      <img class="image_figure image_internal" src="/post/2022-10-18/image-20221018162322457-1666103005915-16.png" alt="" loading="lazy" decoding="async" width="430" height="148"  />
       
 
     </picture>
@@ -399,23 +399,23 @@
 </li>
 <li>
 <p>The host will be added:
-<img src="image-20221018162404385-1666103046802-18.png" alt="image-20221018162404385" style="zoom:80%;" /></p>
+!<img src="image-20221018162404385-1666103046802-18.png" alt="" style="zoom:80%;" /></p>
 </li>
 <li>
 <p>Click connect and Enter your password:
-<img src="image-20221018162507193-1666103110065-20.png" alt="image-20221018162507193" style="zoom:80%;" /></p>
+<img src="image-20221018162507193-1666103110065-20.png" alt="" style="zoom:80%;" /></p>
 </li>
 <li>
 <p>Now you have a connection to your Raspberry PI:
-<img src="image-20221018162702706-1666103225437-22.png" alt="image-20221018162702706" style="zoom:50%;" /></p>
+<img src="image-20221018162702706-1666103225437-22.png" alt="" style="zoom:50%;" /></p>
 </li>
 <li>
 <p>Click Open Folder to start editing files on your PI :
-<img src="image-20221018162954384-1666103396972-24.png" alt="image-20221018162954384" style="zoom:50%;" /></p>
-<h3 id="why-not-a-virtual-machine-with-some-linux-distro-on">Why not a virtual machine with some Linux distro on</h3>
-<p>Now you can go and have a blast with your python projects on your local PI. You may argue I should have had the free VMware ESXi server, the VMware Workstation or ProxMox server to host a virtual machine on, but as of now I had an extra Raspberry PI lying around, and I wanted to make use of it for some python noodling and see what it was good for without having a larger machine running.  Another way is of course to install the windows version on your local Windows (or mac) to run all projects locally, but then again, to keep a clean slate, I did it myyyyyyy waaaayyy.</p>
+<img src="image-20221018162954384-1666103396972-24.png" alt="" style="zoom:50%;" /></p>
 </li>
 </ul>
+<h3 id="why-not-a-virtual-machine-with-some-linux-distro-on">Why not a virtual machine with some Linux distro on</h3>
+<p>Now you can go and have a blast with your python projects on your local PI. You may argue I should have had the free VMware ESXi server, the VMware Workstation or ProxMox server to host a virtual machine on, but as of now I had an extra Raspberry PI lying around, and I wanted to make use of it for some python noodling and see what it was good for without having a larger machine running.  Another way is of course to install the windows version on your local Windows (or mac) to run all projects locally, but then again, to keep a clean slate, I did it <em>myyyyyyy waaaayyy.</em></p>
 
     </div>
 
