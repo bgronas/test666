@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Home Assistant on Bengt&#39;s Blog</title>
+    <link>//localhost:1313/tags/home-assistant/</link>
+    <description>Recent content in Home Assistant on Bengt&#39;s Blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright>cpy</copyright>
+    <lastBuildDate>Mon, 07 Mar 2022 20:31:51 +0000</lastBuildDate><atom:link href="//localhost:1313/tags/home-assistant/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Frigate - I&#39;ve neither seen the boat nor the bird</title>
+      <link>//localhost:1313/post/2022-03-07/</link>
+      <pubDate>Mon, 07 Mar 2022 20:31:51 +0000</pubDate>
+      
+      <guid>//localhost:1313/post/2022-03-07/</guid>
+      <description>
+        
+          
+            Frigate Frigate - I&#39;ve neither seen the boat nor the bird but my Frigate can actually dock or nest?! :-) Frigate is an open source NVR, a Network Video Recorder which is run as a Docker container on a Docker host. My preferred choice was to run it on Ubuntu 21.04 and install all the docker components directly on ubuntu on hardware. This is the recommended install method.
+I hope that, by exposing my own configuration here, people might install and configure frigate faster than I did.
+          
+          
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>Home Assistant and Google [26.01.2022]</title>
+      <link>//localhost:1313/post/home-assistant-google-26-01-2022/</link>
+      <pubDate>Wed, 26 Jan 2022 11:03:17 +0000</pubDate>
+      
+      <guid>//localhost:1313/post/home-assistant-google-26-01-2022/</guid>
+      <description>
+        
+          
+            How I mistakenly did the Google integration I noticed that Alexa was super responsive to my &amp;quot;turn off kitchen table&amp;quot; messages, but my Google were so slow. One day my little Google home mini just referenced me to some Nabu Casa stuff, and I suddenly realized &amp;quot;Hey, We&#39;re going through the web for this!!&amp;quot; = crap!
+ Previously I had just incorporated Google under: http://homeassistant.local:8123/config/cloud/account and It works, but it&#39;s not what I want!
+          
+          
+        
+      </description>
+    </item>
+    
+  </channel>
+</rss>

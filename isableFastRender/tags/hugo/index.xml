@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>HUGO on Bengt&#39;s Blog</title>
+    <link>//localhost:1313/tags/hugo/</link>
+    <description>Recent content in HUGO on Bengt&#39;s Blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright>cpy</copyright>
+    <lastBuildDate>Wed, 19 Jan 2022 15:55:16 +0000</lastBuildDate><atom:link href="//localhost:1313/tags/hugo/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>New Year, New Blog, Learning HUGO [19.01.2022]</title>
+      <link>//localhost:1313/post/year-blog-learning-hugo-19-01-2022/</link>
+      <pubDate>Wed, 19 Jan 2022 15:55:16 +0000</pubDate>
+      
+      <guid>//localhost:1313/post/year-blog-learning-hugo-19-01-2022/</guid>
+      <description>
+        
+          
+            WOW, I just moved to HUGO. Wordpress I was previously using Wordpress with my public web provider. proISP. I have loved ProISP, they are providing me with domains, e-mail, web hosting, MySQL databases and everything.
+Hosting a Wordpress site with them and paying almost nothing for it was very cool, and I have loved wordpress for the simplicity and for the easiness of changing the looks by using simple CSS, Templates, and publishing, It&#39;s just been a walk in the park.
+          
+          
+        
+      </description>
+    </item>
+    
+  </channel>
+</rss>

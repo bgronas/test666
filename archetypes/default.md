@@ -26,6 +26,7 @@ tags:
   - vRealize
   - Automation
   - Operations
+  - KOKO
 comment: false # Disable comment if false.
 ---
 

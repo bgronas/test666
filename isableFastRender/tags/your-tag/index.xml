@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Your TAG! on Bengt&#39;s Blog</title>
+    <link>//localhost:1313/tags/your-tag/</link>
+    <description>Recent content in Your TAG! on Bengt&#39;s Blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright>cpy</copyright>
+    <lastBuildDate>Mon, 10 Oct 2022 13:29:15 +0200</lastBuildDate><atom:link href="//localhost:1313/tags/your-tag/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Andreas [10.10.2022]</title>
+      <link>//localhost:1313/post/2022-10-10/</link>
+      <pubDate>Mon, 10 Oct 2022 13:29:15 +0200</pubDate>
+      
+      <guid>//localhost:1313/post/2022-10-10/</guid>
+      <description>
+        
+          
+            Insert Lead paragraph here.
+Goal: Purpose: Topic:
+ How does this save money, time, hassle Why you should invest time in this: Recipe, how-to, tips, blueprint Productivity DIY  TOPICS: Where can I find ... Where can I start .... How can I start .... How do I set up a reliable, long-term..... How can I improve and organize my .... What’s the best way to ....
+          
+          
+        
+      </description>
+    </item>
+    
+  </channel>
+</rss>

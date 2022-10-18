@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>VSAN on Bengt&#39;s Blog</title>
+    <link>//localhost:1313/tags/vsan/</link>
+    <description>Recent content in VSAN on Bengt&#39;s Blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright>cpy</copyright>
+    <lastBuildDate>Wed, 05 Oct 2022 09:34:10 +0200</lastBuildDate><atom:link href="//localhost:1313/tags/vsan/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>VSAN Stretched Cluster and Operations</title>
+      <link>//localhost:1313/post/2022-10-05/</link>
+      <pubDate>Wed, 05 Oct 2022 09:34:10 +0200</pubDate>
+      
+      <guid>//localhost:1313/post/2022-10-05/</guid>
+      <description>
+        
+          
+            introduction The goal and purpose of this article is to show how Aria Operations (8)Formely known as vRealize Operations) is used to tak care of capacity planning and utilization of stretched VSAN clusters. So the Topic today is to walk you through how does this save time and remove the hassle by investing little time in creating yourself a nice dashboard to combine many small admin tasks into one.
+TOPICS:  How can I improve and organize my .
+          
+          
+        
+      </description>
+    </item>
+    
+  </channel>
+</rss>

@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Operations on Bengt&#39;s Blog</title>
+    <link>//localhost:1313/tags/operations/</link>
+    <description>Recent content in Operations on Bengt&#39;s Blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright>cpy</copyright>
+    <lastBuildDate>Mon, 10 Oct 2022 13:29:15 +0200</lastBuildDate><atom:link href="//localhost:1313/tags/operations/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Andreas [10.10.2022]</title>
+      <link>//localhost:1313/post/2022-10-10/</link>
+      <pubDate>Mon, 10 Oct 2022 13:29:15 +0200</pubDate>
+      
+      <guid>//localhost:1313/post/2022-10-10/</guid>
+      <description>
+        
+          
+            Insert Lead paragraph here.
+Goal: Purpose: Topic:
+ How does this save money, time, hassle Why you should invest time in this: Recipe, how-to, tips, blueprint Productivity DIY  TOPICS: Where can I find ... Where can I start .... How can I start .... How do I set up a reliable, long-term..... How can I improve and organize my .... What’s the best way to ....
+          
+          
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>VSAN Stretched Cluster and Operations</title>
+      <link>//localhost:1313/post/2022-10-05/</link>
+      <pubDate>Wed, 05 Oct 2022 09:34:10 +0200</pubDate>
+      
+      <guid>//localhost:1313/post/2022-10-05/</guid>
+      <description>
+        
+          
+            introduction The goal and purpose of this article is to show how Aria Operations (8)Formely known as vRealize Operations) is used to tak care of capacity planning and utilization of stretched VSAN clusters. So the Topic today is to walk you through how does this save time and remove the hassle by investing little time in creating yourself a nice dashboard to combine many small admin tasks into one.
+TOPICS:  How can I improve and organize my .
+          
+          
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>vRealize Operations 8.6.3. [29.04.2022]</title>
+      <link>//localhost:1313/post/2022-04-29/</link>
+      <pubDate>Fri, 29 Apr 2022 14:54:50 +0200</pubDate>
+      
+      <guid>//localhost:1313/post/2022-04-29/</guid>
+      <description>
+        
+          
+            Recently, VMware released new and improved vRealize versions. Let&#39;s have a look on vRealize Operations and the new v8.6.3 of the product.
+This release from 8.6.2 to 8.6.3. is a is a maintenance release which resolves a few important security and functionality issues identified in the product For more details, see KB 88081. There are 154 CVE&#39;s (Common Vulnerabilities and Exposures) solved and fixed. I&#39;d say it&#39;s quite a large update even if it feels minor.
+          
+          
+        
+      </description>
+    </item>
+    
+  </channel>
+</rss>

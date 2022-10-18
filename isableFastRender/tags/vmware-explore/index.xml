@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>VMware Explore on Bengt&#39;s Blog</title>
+    <link>//localhost:1313/tags/vmware-explore/</link>
+    <description>Recent content in VMware Explore on Bengt&#39;s Blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright>cpy</copyright>
+    <lastBuildDate>Tue, 19 Jul 2022 10:05:04 +0200</lastBuildDate><atom:link href="//localhost:1313/tags/vmware-explore/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Become a Power User of VRealize Log Insight [19.07.2022]</title>
+      <link>//localhost:1313/post/2022-07-19/</link>
+      <pubDate>Tue, 19 Jul 2022 10:05:04 +0200</pubDate>
+      
+      <guid>//localhost:1313/post/2022-07-19/</guid>
+      <description>
+        
+          
+            For the fourth time I am a &#39;captain&#39; as a part of the VMware Hands-On Labs, and this year I will be on both VMware Explore arrangements in USA and EUROPE. While serving the Hands-on Labs environment, we will have Instructor Lead Workshops (ELW) where the participating audience will have headsets and listening to me while we go through one of the labs. One of the Labs I&#39;ve previously have written is the Advanced Topics in vRealize Log Insight (HOL-2201-11-CMP), and this particular Instructor Lead Workshops will be taken from one of the modules from that Lab.
+          
+          
+        
+      </description>
+    </item>
+    
+  </channel>
+</rss>

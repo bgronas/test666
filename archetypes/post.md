@@ -27,8 +27,28 @@ tags:
   - vRealize
   - Automation
   - Operations
+  - Your TAG! 
 
 comment: false # Disable comment if false.
 ---
 
 **Insert Lead paragraph here.**
+
+
+Goal:
+Purpose: 
+Topic: 
+
+* How does this save money, time, hasle
+* Why you should invest time in this:
+* Recipe, how-to, tips, blueprint
+* Productivity 
+* DIY
+
+# TOPICS: 
+ Where can I find ...
+ Where can I start ....
+ How can I start ....
+ How do I set up a reliable, long-term.....
+ How can I improve and organize my ....
+ What’s the best way to ....

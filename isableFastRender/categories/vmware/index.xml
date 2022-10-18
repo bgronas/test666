@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>VMware on Bengt&#39;s Blog</title>
+    <link>//localhost:1313/categories/vmware/</link>
+    <description>Recent content in VMware on Bengt&#39;s Blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright>cpy</copyright>
+    <lastBuildDate>Tue, 19 Jul 2022 10:05:04 +0200</lastBuildDate><atom:link href="//localhost:1313/categories/vmware/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Become a Power User of VRealize Log Insight [19.07.2022]</title>
+      <link>//localhost:1313/post/2022-07-19/</link>
+      <pubDate>Tue, 19 Jul 2022 10:05:04 +0200</pubDate>
+      
+      <guid>//localhost:1313/post/2022-07-19/</guid>
+      <description>
+        
+          
+            For the fourth time I am a &#39;captain&#39; as a part of the VMware Hands-On Labs, and this year I will be on both VMware Explore arrangements in USA and EUROPE. While serving the Hands-on Labs environment, we will have Instructor Lead Workshops (ELW) where the participating audience will have headsets and listening to me while we go through one of the labs. One of the Labs I&#39;ve previously have written is the Advanced Topics in vRealize Log Insight (HOL-2201-11-CMP), and this particular Instructor Lead Workshops will be taken from one of the modules from that Lab.
+          
+          
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>vRealize Operations 8.6.3. [29.04.2022]</title>
+      <link>//localhost:1313/post/2022-04-29/</link>
+      <pubDate>Fri, 29 Apr 2022 14:54:50 +0200</pubDate>
+      
+      <guid>//localhost:1313/post/2022-04-29/</guid>
+      <description>
+        
+          
+            Recently, VMware released new and improved vRealize versions. Let&#39;s have a look on vRealize Operations and the new v8.6.3 of the product.
+This release from 8.6.2 to 8.6.3. is a is a maintenance release which resolves a few important security and functionality issues identified in the product For more details, see KB 88081. There are 154 CVE&#39;s (Common Vulnerabilities and Exposures) solved and fixed. I&#39;d say it&#39;s quite a large update even if it feels minor.
+          
+          
+        
+      </description>
+    </item>
+    
+  </channel>
+</rss>
