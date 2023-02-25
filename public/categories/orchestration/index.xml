@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Orchestration on Bengt&#39;s Blog</title>
+    <link>/categories/orchestration/</link>
+    <description>Recent content in Orchestration on Bengt&#39;s Blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright>cpy</copyright>
+    <lastBuildDate>Fri, 24 Feb 2023 10:02:11 +0100</lastBuildDate><atom:link href="/categories/orchestration/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Operations and Orchestrator</title>
+      <link>/post/2023-02-24/</link>
+      <pubDate>Fri, 24 Feb 2023 10:02:11 +0100</pubDate>
+      
+      <guid>/post/2023-02-24/</guid>
+      <description>
+        
+          
+            Objectives The goal and purpose is to show how to connect vRealize Orchestrator to vRealize Operations to later be able to do actions and remedies based on alerts in vRealize Operations. You can then also run Orchestrator workflows directly from vRealize Operations objects. I hope this little article with it’s two cruicial tips will save you time and hassle and to easily be successful.
+Prerequisites  vRealize Orchestrator installed. My Orchestrator is installed with vRealize Automation or you can download your standalone version from Customer Connect Look under &amp;quot;Download VMware vSphere&amp;quot; (vRO is free with vCenter).
+          
+          
+        
+      </description>
+    </item>
+    
+  </channel>
+</rss>

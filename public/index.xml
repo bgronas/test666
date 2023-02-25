@@ -7,7 +7,24 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>cpy</copyright>
-    <lastBuildDate>Tue, 31 Jan 2023 12:53:31 +0100</lastBuildDate><atom:link href="/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Fri, 24 Feb 2023 10:02:11 +0100</lastBuildDate><atom:link href="/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Operations and Orchestrator</title>
+      <link>/post/2023-02-24/</link>
+      <pubDate>Fri, 24 Feb 2023 10:02:11 +0100</pubDate>
+      
+      <guid>/post/2023-02-24/</guid>
+      <description>
+        
+          
+            Objectives The goal and purpose is to show how to connect vRealize Orchestrator to vRealize Operations to later be able to do actions and remedies based on alerts in vRealize Operations. You can then also run Orchestrator workflows directly from vRealize Operations objects. I hope this little article with it’s two cruicial tips will save you time and hassle and to easily be successful.
+Prerequisites  vRealize Orchestrator installed. My Orchestrator is installed with vRealize Automation or you can download your standalone version from Customer Connect Look under &amp;quot;Download VMware vSphere&amp;quot; (vRO is free with vCenter).
+          
+          
+        
+      </description>
+    </item>
+    
     <item>
       <title>VROPS Out of Disk Space</title>
       <link>/post/2023-01-31/</link>
