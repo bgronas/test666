@@ -1,29 +1,3 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
-  <channel>
-    <title>multi-cloud on Bengt&#39;s Blog</title>
-    <link>/categories/multi-cloud/</link>
-    <description>Recent content in multi-cloud on Bengt&#39;s Blog</description>
-    <generator>Hugo -- gohugo.io</generator>
-    <language>en-us</language>
-    <copyright>cpy</copyright>
-    <lastBuildDate>Thu, 19 May 2022 10:43:52 +0200</lastBuildDate><atom:link href="/categories/multi-cloud/index.xml" rel="self" type="application/rss+xml" />
-    <item>
-      <title>VMware Explore, the New VMworld! [19.05.2022]</title>
-      <link>/post/2022-05-19/</link>
-      <pubDate>Thu, 19 May 2022 10:43:52 +0200</pubDate>
-      
-      <guid>/post/2022-05-19/</guid>
-      <description>
-        
-          
-            VMware Explore is the new VMworld Right? Right! Yes it&#39;s all here, this will not change back again. Do we all want to change in the same pace VMware does. We all know that can be challenging for customers, but what about you? Read through this and see if your own personal opinions differ from mine, I hope they do.
-Being a VMware employee VMware is all about diversity. We can all be ourselves as long as we don&#39;t hurt anyone.
-          
-          
-        
-      </description>
-    </item>
-    
-  </channel>
-</rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>multi-cloud on Bengt's Blog</title><link>/categories/multi-cloud/</link><description>Recent content in multi-cloud on Bengt's Blog</description><generator>Hugo -- gohugo.io</generator><language>en-us</language><copyright>cpy</copyright><lastBuildDate>Thu, 19 May 2022 10:43:52 +0200</lastBuildDate><atom:link href="/categories/multi-cloud/index.xml" rel="self" type="application/rss+xml"/><item><title>VMware Explore, the New VMworld! [19.05.2022]</title><link>/post/2022-05-19/</link><pubDate>Thu, 19 May 2022 10:43:52 +0200</pubDate><guid>/post/2022-05-19/</guid><description>
+VMware Explore is the new VMworld Right? Right! Yes it's all here, this will not change back again. Do we all want to change in the same pace VMware does. We all know that can be challenging for customers, but what about you? Read through this and see if your own personal opinions differ from mine, I hope they do.
+Being a VMware employee VMware is all about diversity. We can all be ourselves as long as we don't hurt anyone.</description></item></channel></rss>
