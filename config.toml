@@ -16,6 +16,7 @@ fallBackOgImage  = "thumbnail.png"
 codeMaxLines = 12
 codeLineNumbers = false
 mainSections = ["post", "blog"]
+googleAnalytics = 'G-63N9K3EZWP'
 # centerLogo = false
 logo = "logo.png"
 iconsDir = "icons/"
@@ -41,3 +42,6 @@ showRelatedInArticle = true
 showRelatedInSidebar = true 
 footerLogo = "logo.png"
 draft = true
+
+[social]
+twitter = 'bgronas'
