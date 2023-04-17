@@ -137,11 +137,9 @@ Here is an example of the scheduled task
 
 > GET YOUR copy of the code from [THIS GITHUB PAGE](https://github.com/VMwareAria/cloud-templates/blob/main/powersave/orchestrator-script.py)
 
+![Orchestrator Scriptable Task](./images/index/image-20230417090624440.png)
 
-
-The Python script behind the workflow **“bgro-powersave-schedule”** in vRealize Orchestrator is made so it can manage the power on/off for VMs by powering them on or off based on a set time window. 
-
-
+The Python script behind the scriptable task in the workflow **“bgro-powersave-schedule”** in vRealize Orchestrator is made so it can manage the power on/off for VMs by powering them on or off based on a set time window. 
 
 The Python script uses the vRealize Automation (vRA) API to control the machines and also has a Slack web-hook to send notifications when machines are powered off or on.
 
