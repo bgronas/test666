@@ -55,13 +55,20 @@ Note: If you missed the Hyperscaler discussion and how Hyperscalers actually pow
 
 
 
-
-
-# How to do it 
+# An example: how you can do it 
 Since you are aware of costs of your Infrastructure, you are probably using more than one technology from VMware. 
-In this article I have made a suggestion using  Orchestrator, Python, and vRealize (Aria) Automation to accomplish a simple way to implement Power Off and Power On schedules for you Datacenter. 
 
-## Requesting a deployment with power save
+In this article I have made a suggestion using  Orchestrator, Python, and Aria (Aria) Automation to accomplish a simple way to implement Power Off and Power On schedules for you Datacenter. 
+
+### Requirements
+
+To go through with this you need <u>Aria Automation</u>. Aria Automation contains Aria Orchestrator and Aria Service Broker that we show in this context.  *Aria Automation also contains SaltStack Config but we’re not using that this time.* 
+
+A little Python knowledge is OK, but not necessary, because we are providing you with the scripts you need. 
+
+# **Using the Self Service portal**
+
+### Requesting a deployment with power save
 
 To simplify the consumption of IT services for users by using a `Self-Service Provisioning` in a portal.  In this Multi-Cloud Management service catalog, we as an IT team have predefined our service offering. Here I have a Catalog Item called **Save Power**, that will deploy virtual machines and tag them with the tag *“powersave”*. ![](./images/index/image-20230416133607849.png)
 #### Request
@@ -86,7 +93,7 @@ Below is the explanation for the Size explains the **Sizes** of the servers we�
 
 #### Price
 
-Since our Automaton System (vRealize Automation) is has the ability to use pricecards or be connected to the Operations system (vRealize Operations) with price cards we can also Calculate the monthly price for the several options   e.g. when we choose a **X-large** or a **small server**. 
+Since our Automaton System (Aria Automation) is has the ability to use pricecards or be connected to the Operations system (Aria Operations) with price cards we can also Calculate the monthly price for the several options   e.g. when we choose a **X-large** or a **small server**. 
 
 <img src="./images/index/image-20230416135215371.png" align="left" style="zoom: 72%;" />
 
@@ -102,12 +109,20 @@ The end result is that every morning and every evening there is a Power On and O
 
 See further down for explanation about the Slack portion of the Python script that makes this happen. 
 
-# The vRealize Automation Cloud Template
+# **Behind the Scenes **
+
+# Aria Automation Cloud Template
 
 <img src="./images/index/image-20230416171433416.png" align="left"/> The blueprint aka. Cloud template:  Behind the Self Service choice there is a simple Cloud Template, in other words a declarative language, such as YAML  containing Infrastructure as Code (IaC) to define our  desired state of our cloud infrastructure. 
 
 
+
+
+> 
+>
 > You can find a **Github** IaC YAML code with a  [copy of the template here](https://github.com/VMwareAria/cloud-templates/blob/2debc41fe1b95e17a28c202eb05da0b31daa64d4/powersave/blueprint.yaml) 
+>
+> 
 
 <img src="./images/index/image-20230416171507115.png" align="left" />The tagging: The main thing about the Cloud template and the VM you are about to create is that is has a specific TAG. The Tag is created with this code snippet within the cloud template: 
 
@@ -134,15 +149,27 @@ Here is an example of the scheduled task
 
 
 
-# Python code 
+# **Python code / Orchestrator Workflow**
 
+
+
+##### Get the code
+
+> 
+>
 > GET YOUR copy of the code from [THIS GITHUB PAGE](https://github.com/VMwareAria/cloud-templates/blob/main/powersave/orchestrator-script.py)
+>
+> 
+
+We just use a single Workflow called “bgro-powersave-schedule”. In that workflow, we have one scriptable task with a Python script that actually contains the most of the intelligence.  It finds all deployments with the power save tag  set to true then powers on or off accordingly.  
 
 ![Orchestrator Scriptable Task](./images/index/image-20230417090624440.png)
 
-The Python script behind the scriptable task in the workflow **“bgro-powersave-schedule”** in vRealize Orchestrator is made so it can manage the power on/off for VMs by powering them on or off based on a set time window. 
+The Python script behind the scriptable task in the workflow **“bgro-powersave-schedule”** in Aria Orchestrator is made so it can manage the power on/off for VMs by powering them on or off based on a set time window. 
 
-The Python script uses the vRealize Automation (vRA) API to control the machines and also has a Slack web-hook to send notifications when machines are powered off or on.
+### Python
+
+The Python script uses the Aria Automation (vRA) API to control the machines and also has a Slack web-hook to send notifications when machines are powered off or on.
 
 #### Functions 
 
@@ -266,7 +293,9 @@ if response.status_code != 200:
 
 
 
-If you download from the Git Repository, as mentioned above, the rest of the code is fairly well documented within the code. 
+# Conclusion
+
+If you download everything needed from the [Git Repository](https://github.com/VMwareAria/cloud-templates/tree/main/powersave), as mentioned [Above](#1-Get the code) , the rest of the code is fairly well documented within the code. Pay attention to what it does.
 
 
 
