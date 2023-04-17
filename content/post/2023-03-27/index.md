@@ -33,6 +33,8 @@ tags:
 comment: false # Disable comment if false.
 ---
 
+# **Powersaving in our datacenter**
+
 **The goal and purpose of this article is to discuss “the WHY” in Powering off and Powering On VMs based on regular Schedule, just the way Google GCP, AWS, and Azure does it with VMs**. Why would we implement Sustainable Practices to meet our sustainability goals? 
 
 This article is divided into Two parts:
@@ -55,15 +57,12 @@ You can always argue and debate the various Hyperscaler Cloud computing platform
 
 ## Hyperscalers and power saving
 
-<img src="./images/index/60510880_7.png" align="right" style="zoom:20%;" />Hyperscalers use many combinations of power management techniques to optimize energy consumption and reduce their carbon footprint. These techniques can be: 
+<img src="./images/index/60510880_7.png" align="right" style="zoom:15%;" />Hyperscalers use many combinations of power management techniques to optimize energy consumption and reduce their carbon footprint. These techniques can be: 
 
 - If you do not consider mainframe computing, VMware sort of commercialized *Server Consolidation* to reduce energy consumption. This is widely adopted by any hyperscaler, 
 - Predictive analytics to anticipate peak usage periods and adjust their power consumption accordingly
 - Dynamic power management techniques to adjust the power consumption of their servers based on workload demand.
-
-
-
-
+- 
 
 
 
@@ -71,7 +70,7 @@ You can always argue and debate the various Hyperscaler Cloud computing platform
 
 ##### <img src="./images/index/Green_economy_UN.jpg" align="left" style="zoom:80%;" />1. Save money 
 
-Any energy efficiency measures in our datacenter, help us save money by reducing energy consumption and associated costs:
+Any energy efficiency measures in our datacenter, help us save money by reducing energy consumption and associated *costs*:
 
 - Reduced Energy Consumption and Bills
 - Lower Cooling Costs
@@ -79,11 +78,11 @@ Any energy efficiency measures in our datacenter, help us save money by reducing
 - Improved Resource Utilization. Reduce the need for additional servers
 - Reduce operating costs by monitoring VM usage and power consumption, and identify optimization opportunities
 
-##### <img src="./images/index/image-20230416160909470.png" align="left" style="zoom:80%;" />
 
-##### 2. Green Score
 
-> in vRealize Operations The Green Score is calculated based on five components - Workload Efficiency, Utilization of Physical resources, the extent of Virtualization, Power Source and Hardware Efficiency. 
+##### <img src="./images/index/image-20230416160909470.png" align="left" style="zoom:80%;" /> Green Score
+
+in vRealize Operations The Green Score is calculated based on five components - Workload Efficiency, Utilization of Physical resources, the extent of Virtualization, Power Source and Hardware Efficiency. 
 
 - Workload Efficiency – Contributes to 22.5% weightage Efficiency = Wastage / (Wastage + Non Wastage)
 - Resource Utilization – Contributes to 12.5% weightage based on the utilization of hardware from the absolute capacity without considering buffers and HA
@@ -91,13 +90,21 @@ Any energy efficiency measures in our datacenter, help us save money by reducing
 - Power Source – Contributes to 37.5% weightage – scoring based on the carbon intensity of the power source used
 - Hardware Efficiency - Contributes to 12.5% weightage, based on the fact that newer generation hardware will be more energy efficient.
 
+
+
 ##### <img src="./images/index/Sustainable-Marketing.jpg" align="left" style="zoom:20%;" />3. Promoting sustainability
 
-Companies that support Sustainable Causes and implement Sustainable Practices can meet their sustainability goals. This increases the reputation and the bottom line. Being known as a sustainable through sustainability reports, websites, partnerships and collaborators can attract customers and talent, and create long-term value. The stock market might invest in green organizations, you can get green loans, and the legislation in Europe is becoming more likely to enforce organizations to prove their Green value. 
+Companies that support Sustainable Causes and implement Sustainable Practices can meet their sustainability goals. This increases the reputation and the bottom line. Being known as a sustainable through sustainability reports, websites, partnerships and collaborators can attract customers and talent, and create long-term value. The stock market might invest in green organizations, green loans, and the legislation in Europe is becoming more likely to enforce organizations to prove their Green value. 
+
+
+
+
 
 ## Do Hyperscalers power off their VMs?
 
 **`Oh yes!`** All the Hyperscalers can schedule VMs to shut down at specific times when they are not needed, such as during off-peak hours or weekends. Some other techniques are Auto-Scaling, load balancing to distribute workloads, idle timeout for VMs. All these techniques helps to reduce energy consumption and optimize resource utilization and reduce their carbon footprint.
+
+
 
 ### An example on how Google does it
 
@@ -119,7 +126,7 @@ Tracking and controlling and have a first virtual approach, and understand all I
 
 
 
-## Next 
+## **Next - just do it…**
 
 In Part II We will do a technical walk-through using VMware Automation technology to schedule automatically power save of new deployments
 
