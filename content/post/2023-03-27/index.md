@@ -48,14 +48,16 @@ Note: If you want to go ahead and implement everything immediately without furth
 
 ## Cloud sustainability and carbon footprint?
 
-You can always argue and debate the various Hyperscaler Cloud computing platforms, such as Amazon Web Services (AWS), Microsoft Azure, and Google Cloud Platform (GCP) about of they already have taken steps towards sustainability and are helping us go green by reducing their carbon footprint, supporting renewable energy development, and developing innovative green technologies. Some of the known statements are:
+<img src="./images/index/carbon-footprint-medium.jpg" align="left" style="zoom:25%;" />You can always argue and debate the various Hyperscaler Cloud computing platforms, such as Amazon Web Services (AWS), Microsoft Azure, and Google Cloud Platform (GCP) about if they already have taken steps towards sustainability and are helping us go green by reducing their carbon footprint, supporting renewable energy development, and developing innovative green technologies. 
+
+Some of the known statements are:
 
 - AWS (Amazon Web Services). Amazon is committed to being carbon neutral by 2040
 - Azure: Microsoft has set a goal to be carbon negative by 2030 and to remove all the carbon it has emitted since its founding in 1975 by 2050
 - Google Cloud Platform (GCP): Google is the leader in sustainability initiatives and has been carbon neutral since 2007.
 - What about the multi-cloud company VMware?  VMWare did commit to being carbon neutral by 2022, and made it earlier than expected. 
 
-## Hyperscalers and power saving
+## Hyperscalers are power saving
 
 <img src="./images/index/60510880_7.png" align="right" style="zoom:15%;" />Hyperscalers use many combinations of power management techniques to optimize energy consumption and reduce their carbon footprint. These techniques can be: 
 
@@ -66,23 +68,24 @@ You can always argue and debate the various Hyperscaler Cloud computing platform
 
 
 
-## Why bother with the On-Premises infrastructure?
+## Why bother saving On-Premises?
 
-##### <img src="./images/index/Green_economy_UN.jpg" align="left" style="zoom:80%;" />1. Save money 
+##### <img src="./images/index/Green_economy_UN.jpg" align="left" style="zoom:80%;" width=25% />
 
-Any energy efficiency measures in our datacenter, help us save money by reducing energy consumption and associated *costs*:
+##### 1. Save money 
 
-- Reduced Energy Consumption and Bills
-- Lower Cooling Costs
+Any energy efficiency measures in our datacenter help us save money by reducing energy consumption and associated *costs*:
+
+- Reduced Energy Consumption, Lower Cooling Costs and Bills
 - Longer Equipment Lifespan, Reduce the strain on the equipment.
 - Improved Resource Utilization. Reduce the need for additional servers
 - Reduce operating costs by monitoring VM usage and power consumption, and identify optimization opportunities
 
 
 
-##### <img src="./images/index/image-20230416160909470.png" align="left" style="zoom:80%;" /> Green Score
+##### <img src="./images/index/image-20230416160909470.png" align="left" style="zoom:80%;" />2. Green Score
 
-in vRealize Operations The Green Score is calculated based on five components - Workload Efficiency, Utilization of Physical resources, the extent of Virtualization, Power Source and Hardware Efficiency. 
+in VMware Aria Operations the Green Score is calculated based on 5 components:
 
 - Workload Efficiency – Contributes to 22.5% weightage Efficiency = Wastage / (Wastage + Non Wastage)
 - Resource Utilization – Contributes to 12.5% weightage based on the utilization of hardware from the absolute capacity without considering buffers and HA
