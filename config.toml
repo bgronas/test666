@@ -10,10 +10,10 @@ largeTwitterCard = true
 description = "Virtual Stuff for Virtual people"
 introDescription = "Virtual Stuff for Virtual people"
 introURL = true
-numberOfTagsShown = 10
+numberOfTagsShown = 5
 usePageBundles = true
 fallBackOgImage  = "thumbnail.png"
-codeMaxLines = 12
+codeMaxLines = 8
 codeLineNumbers = false
 mainSections = ["post", "blog"]
 googleAnalytics = 'G-63N9K3EZWP'
@@ -26,7 +26,7 @@ figurePositionShow = true
 # customCSS
 # customJS
 enforceLightMode = true
-# enforceDarkMode
+enforceDarkMode = false
 titleSeparator = "|"
 showShare = false
 comments = false
