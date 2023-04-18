@@ -37,10 +37,11 @@ comment: false # Disable comment if false.
 
 **The goal and purpose of this article is to discuss “the WHY” in Powering off and Powering On VMs based on regular Schedule, just the way Google GCP, AWS, and Azure does it with VMs**. Why would we implement Sustainable Practices to meet our sustainability goals? 
 
-This article is divided into Two parts:
+- This article is divided into 3 parts:
 
-- [IaaS Automated Powersaving, Green Sustainability - Pt.1](https://bengt.no/post/2023-03-27/)
-- [IaaS Automated Powersaving, Green Sustainability - Pt.2](https://bengt.no/post/2023-04-16/) 
+  - [IaaS Automated Powersaving, Green Sustainability - Pt.1](https://bengt.no/post/2023-03-27/)
+  - [IaaS Automated Powersaving, Green Sustainability - Pt.2](https://bengt.no/post/2023-04-16/)
+  - [IaaS Automated Powersaving, Green Sustainability - Pt.3](https://bengt.no/post/2023-04-18/)
 
 #### This is the first article containing the WHY. 
 

@@ -39,13 +39,15 @@ comment: false # Disable comment if false.
 
 **The goal and purpose of this article is to show an example of implementation to accomplish the scheduled Powering off(and on) of VMs in our own On-Premises datacenter the same way Google GCP, AWS, and Azure VMs does it with their Hyperscalers.**
 
-This article was divided into Two parts:
-- [IaaS Automated Powersaving, Green Sustainability - Pt.1](https://bengt.no/post/2023-03-27/)
-- [IaaS Automated Powersaving, Green Sustainability - Pt.2](https://bengt.no/post/2023-04-16/) 
+- This article is divided into 3 parts:
+
+  - [IaaS Automated Powersaving, Green Sustainability - Pt.1](https://bengt.no/post/2023-03-27/)
+  - [IaaS Automated Powersaving, Green Sustainability - Pt.2](https://bengt.no/post/2023-04-16/)
+  - [IaaS Automated Powersaving, Green Sustainability - Pt.3](https://bengt.no/post/2023-04-18/)
 
 <img src="./images/index/image-20230416162218067.png" align="left" style="zoom:100%;" />
 
-This is the second article containing the practical walk through of an example of how to do this with VMware technology. 
+This is the **second** article containing the practical walk through of an example of how to do this with VMware technology. 
 
 Note: If you missed the Hyperscaler discussion and how Hyperscalers actually power off and power on VMs on a schedule, and also **`“the WHY”`**, then please go ahead and read up on the article [IaaS Automated Powersaving, Green Sustainability - Pt.1](https://bengt.no/post/2023-03-27/)
 

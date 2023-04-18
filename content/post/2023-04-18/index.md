@@ -2,10 +2,10 @@
 author: "Bengt Grønås"
 title: "IaaS Automated Powersaving, Green Sustainability   Pt. 3" # Title of the blog post.
 date: 2023-04-18T09:11:13+02:00 # Date of post creation.
-description: "Customers with Aria Operations should usie corresponding working hours in the capacity policy, otherwise the powered off VMs could have unforeseen effects on the calculation" # Description used for search engine.
+description: "Customers with Aria Operations should use corresponding working hours in the capacity policy, otherwise the powered off VMs could have unforeseen effects on the calculation" # Description used for search engine.
 
 featured: false # Sets if post is a featured post, making appear on the home page side bar.
-draft: true # Sets whether to render this page. Draft of true will not be rendered.
+draft: false # Sets whether to render this page. Draft of true will not be rendered.
 toc: false # Controls if a table of contents should be generated for first-level links automatically.
 
 # menu: main
@@ -46,7 +46,9 @@ This article is divided into 3 parts:
 
 # Maintenance schedules (offline objects)
 
-Well, since we’re turning workloads off and on again, pun intended, we need to make sure the operations tool we are using does not measure this as a ‘Object Down’. We need to make Aria Operations *Shut-Down Aware*, by making sure it does not measure uptime or alerts us when we are outside the business hours when the workload is controlled shut down.
+Well, since we are turning workloads off and on again, pun intended, we need to make sure the operations tool we are using does not measure this as a ‘Object Down’. We need to make Aria Operations *Shut-Down Aware*, by making sure it does not measure uptime or alerts us when we are outside the business hours when the workload is controlled shut down.
+
+
 
 Here are some facts about **Aria Operations Maintenance Schedule:**
 
@@ -60,11 +62,17 @@ Here are some facts about **Aria Operations Maintenance Schedule:**
 
 - Prevents misrepresentation of results with reports, views, and dashboards
 
-So, is this the best we’ve got. Maybe, let’s see what the “Business Hours” does
+
+
+Let’s see what the “Business Hours” does
+
+
 
 # Policies with a Business Hours Schedule
 
 Business hours schedule are based on policies, different objects can have different business hours. Maybe we like the thought of collecting metrics for the purpose of doing troubleshooting. 
+
+
 
 - The capacity charts will be based on business hours, meaning it Affects calculation of capacity analysis and projections. 
 - The capacity forecast for the object will be based on the *business hours* and not for the full 24 hours. 
@@ -78,9 +86,13 @@ Business hours schedule are based on policies, different objects can have differ
 
 Views can have Business hours. You normally find this in Aria Operations using Lists, Summaries, Trends, or Distribution under the "Time Settings Tab". 
 
+
+
 - Sets the time interval of data transformation
   The view is populated by data according to the time interval 
 - Example: track average utilization of VMs over a week (business days), during specified hours of the day (business hours).
+
+
 
 ## Filter Tab on Views
 
@@ -162,7 +174,9 @@ Mark **Keep group membership up to date**
 
 Select the Object Type that matches all of the following criteria: **Virtual Machine**
 
-Tag, powersave, is, true
+Tag, **powersave**, is, **true**
+
+
 
 ![image-20230418105734961](./images/index/image-20230418105734961.png)
 
@@ -170,7 +184,9 @@ Tag, powersave, is, true
 
 # Conclusion
 
-We have now selected VMs with the Tags powersave=true, then put them into a group that has a policy containing scheduled maintenance window. 
+We have now selected VMs in vSphere with the Tags powersave=true and added them dynamically into a group that has a policy containing scheduled maintenance window. 
+
+
 
 
 
