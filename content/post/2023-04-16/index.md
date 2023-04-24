@@ -77,7 +77,7 @@ To simplify the consumption of IT services for users by using a `Self-Service Pr
 When we click **Request** I am presented with a `Request` form with a possibility to change **Power Save** and **VM Size**. 
 Both of which will affect our savings: 
 
-<img src="./images/index/image-20230416134645555.png" style="zoom:60%;" />
+<img src="./images/index/image-20230424102329856.png" style="zoom:75%;" />
 
 By clicking the **information icons** on those two options, we can get more information about the different options. 
 
@@ -85,13 +85,16 @@ By clicking the **information icons** on those two options, we can get more info
 >
 
 #### Powersave mode 
-Below is the explanation for the Size explains the impact of the Power Save mode
-<img src="./images/index/image-20230416134735653.png"/>
+Below is the explanation for the Size explains the impact of the **Power Save mode**
+
+![image-20230424102531354](./images/index/image-20230424102531354.png)
 
 ####  The deployment Size
 Below is the explanation for the Size explains the **Sizes** of the servers we’re about to deploy:
 
-![](./images/index/image-20230416134830737.png)
+![image-20230424102718775](./images/index/image-20230424102718775.png)
+
+
 
 #### Price
 
